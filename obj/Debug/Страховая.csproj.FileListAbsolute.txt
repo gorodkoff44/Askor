@@ -1,0 +1,15 @@
+C:\Users\Comp0707\Desktop\Askor\bin\Debug\Страховая.exe.config
+C:\Users\Comp0707\Desktop\Askor\bin\Debug\Страховая.exe
+C:\Users\Comp0707\Desktop\Askor\bin\Debug\Страховая.pdb
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\Страховая.csprojAssemblyReference.cache
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\MainWindow.g.cs
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\App.g.cs
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\Страховая_MarkupCompile.cache
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\Страховая_MarkupCompile.lref
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\MainWindow.baml
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\Страховая.g.resources
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\Страховая.Properties.Resources.resources
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\Страховая.csproj.GenerateResource.cache
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\Страховая.csproj.CoreCompileInputs.cache
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\Страховая.exe
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\Страховая.pdb

@@ -1,0 +1,14 @@
+﻿<Window x:Class="Страховая.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Страховая"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="auto" Width="auto">
+    <WrapPanel Margin="0,157,0,0" HorizontalAlignment="Center" >
+        <Button Content="Автострахование" Width="auto" Height="70" Margin="10" />
+        <Button Content="Страхование имущества" Width="auto" Height="70" Margin="5" />
+        <Button Content="Страхование от несчастных случаев" Width="auto" Height="70" Margin="5" />
+    </WrapPanel>
+</Window>

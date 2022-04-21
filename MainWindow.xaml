@@ -3,15 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Страховая"
         mc:Ignorable="d"
         Title="MainWindow" Height="auto" Width="auto"
         ResizeMode="NoResize" >
-    <Grid>
+    <Grid x:Name="GlavnoeMenu">
         <Grid.Background>
             <ImageBrush ImageSource="bg.png"></ImageBrush>
         </Grid.Background>
-        <TextBlock Text="Аскор" FontSize="100" TextAlignment="Left" Foreground="White" HorizontalAlignment="Center" Margin="203,87,10,87"  >
+        <TextBlock Text="Аскор" FontSize="100" TextAlignment="Left" Foreground="White" HorizontalAlignment="Center" Margin="262,87,222,87"  >
             <TextBlock.Effect>
                 <DropShadowEffect BlurRadius="25"></DropShadowEffect>
             </TextBlock.Effect>

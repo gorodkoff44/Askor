@@ -5,11 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Страховая"
         mc:Ignorable="d"
-        Title="MainWindow" Height="auto" Width="auto">
-    <WrapPanel Margin="0,157,0,0" HorizontalAlignment="Center" >
-        <Button Content="Объекты страхования" Width="auto" Height="70" Margin="10" Button.Click="Button_Click" />
-        <Button Content="Договора" Width="auto" Height="70" Margin="5" Button.Click="Button_Click_1" />
-        <Button Content="Страховые выплаты" Width="auto" Height="70" Margin="5" Button.Click="Button_Click_2" />
-        <Button Content="Выход" Width="auto" Height="70" Margin="5" Button.Click="Button_Click_3" />
-    </WrapPanel>
+        Title="MainWindow" Height="auto" Width="auto"
+        ResizeMode="NoResize" >
+    <Grid>
+        <TextBlock Text="Аскор" FontSize="100" TextAlignment="Center" Foreground="Black"  Margin="203,87,10,87" />
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,87" Width="198" >
+            <Button Content="Объекты страхования" Width="auto" Height="70" Margin="10" Button.Click="Button_Click" />
+            <Button Content="Договора" Width="auto" Height="70" Margin="5" Button.Click="Button_Click_1" />
+            <Button Content="Страховые выплаты" Width="auto" Height="70" Margin="5" Button.Click="Button_Click_2" />
+            <Button Content="Выход" Height="70" Margin="5" Button.Click="Button_Click_3" />
+        </StackPanel>
+    </Grid>
 </Window>

@@ -28,8 +28,7 @@ namespace Страховая
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             object_str Object_Str = new object_str();
-            //MainWindow Object_str = new MainWindow();
-            Object_Str.Show();
+            Object_Str.ShowDialog();
             Object_Str.Owner = this;
 
         }
@@ -37,14 +36,14 @@ namespace Страховая
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             dogovora Dogovora = new dogovora();
-            Dogovora.Show();
+            Dogovora.ShowDialog();
             Dogovora.Owner = this;
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             StrWip strWip = new StrWip();
-            strWip.Show();
+            strWip.ShowDialog();
             strWip.Owner = this;
         }
 

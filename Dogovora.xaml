@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="Договора" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel>
+            <TextBlock Text="№ Договора" HorizontalAlignment="Left" Margin="10" >
+                    <TextBox HorizontalAlignment="Right" Width="300" Margin="10" />
+            </TextBlock>
+
+            <TextBlock Text="Дата заключения" Margin="10" HorizontalAlignment="Left">
+                <TextBox HorizontalAlignment="Right" Width="300" Margin="10" />
+            </TextBlock>             
+            <TextBlock Text="ФИО клиента" />
+            <TextBlock Text="Паспортные данные" />
+            <TextBlock Text="Объект страхования" />
+            <TextBlock Text="Страховая выплата" />
+            <TextBlock Text="Срок действия до" />
+        </StackPanel>
     </Grid>
 </Window>

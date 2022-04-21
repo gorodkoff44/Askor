@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="Объекты страхования" Height="450" Width="800">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Center" FontSize="40" Margin="118,79,118,0">Выберете объект страхования</TextBlock>
+        <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Content="Автомобиль" Width="auto" Height="auto" Margin="5" Button.Click="Button_Click" />
+            <Button Content="Жильё" Width="auto" Height="auto" Margin="5" Button.Click="Button_Click_1" />
+            <Button Content="Собственная жизнь" Width="auto" Height="auto" Margin="5" Button.Click="Button_Click_2" />
+        </WrapPanel>
     </Grid>
 </Window>

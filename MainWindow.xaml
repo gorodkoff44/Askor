@@ -8,12 +8,21 @@
         Title="MainWindow" Height="auto" Width="auto"
         ResizeMode="NoResize" >
     <Grid>
-        <TextBlock Text="Аскор" FontSize="100" TextAlignment="Center" Foreground="Black"  Margin="203,87,10,87" />
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,87" Width="198" >
-            <Button Content="Объекты страхования" Width="auto" Height="70" Margin="10" Button.Click="Button_Click" />
-            <Button Content="Договора" Width="auto" Height="70" Margin="5" Button.Click="Button_Click_1" />
-            <Button Content="Страховые выплаты" Width="auto" Height="70" Margin="5" Button.Click="Button_Click_2" />
-            <Button Content="Выход" Height="70" Margin="5" Button.Click="Button_Click_3" />
+        <Grid.Background>
+            <ImageBrush ImageSource="bg.png"></ImageBrush>
+        </Grid.Background>
+        <TextBlock Text="Аскор" FontSize="100" TextAlignment="Left" Foreground="White" HorizontalAlignment="Center" Margin="203,87,10,87"  >
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="25"></DropShadowEffect>
+            </TextBlock.Effect>
+        </TextBlock>
+        <Label Content="00:00" Name="lblTime" FontSize="50" Foreground="White" HorizontalAlignment="Right" />
+        <Label Content="1 Января 2022 г." Name="lblDate" FontSize="20" Foreground="White" HorizontalAlignment="Right" Margin="0,62,0,-62" />
+        <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,87" Width="198" >
+            <Button Foreground="White" Content="Объекты страхования" Width="auto" Height="70" Margin="10" Button.Click="Button_Click" Background="#55000000" BorderBrush="#33ffffff" />
+            <Button Content="Договора" Width="auto" Height="70" Margin="5" Button.Click="Button_Click_1" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
+            <Button Content="Страховые выплаты" Width="auto" Height="70" Margin="5" Button.Click="Button_Click_2" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
+            <Button Content="Выход" Height="70" Margin="5" Button.Click="Button_Click_3" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
         </StackPanel>
     </Grid>
 </Window>

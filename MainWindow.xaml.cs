@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Страховая
 {
@@ -20,9 +21,24 @@ namespace Страховая
     /// </summary>
     public partial class MainWindow : Window
     {
+        DispatcherTimer timer = new DispatcherTimer();
+        public static DateTime Today { get; }
         public MainWindow()
         {
             InitializeComponent();
+            //время
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
+            timer.Start();
+            DateTime thisDay = DateTime.Today;
+            lblDate.Content = thisDay.ToString("D");
+        }
+        void Timer_Tick(object sender, EventArgs e) //время
+        {
+            string time = DateTime.Now.ToLongTimeString(); ; //хранит полное время
+            string[] words = time.Split(new char[] { ':' }); //разделение данных часов минут и секунд
+            string lbl = words[0] + ":" + words[1]; //сборка часов и минут в 1 переменную
+            lblTime.Content = lbl; //вывод
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

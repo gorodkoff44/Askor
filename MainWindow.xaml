@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="auto" Width="auto">
     <WrapPanel Margin="0,157,0,0" HorizontalAlignment="Center" >
-        <Button Content="Автострахование" Width="auto" Height="70" Margin="10" />
-        <Button Content="Страхование имущества" Width="auto" Height="70" Margin="5" />
-        <Button Content="Страхование от несчастных случаев" Width="auto" Height="70" Margin="5" />
+        <Button Content="Объекты страхования" Width="auto" Height="70" Margin="10" Button.Click="Button_Click" />
+        <Button Content="Договора" Width="auto" Height="70" Margin="5" Button.Click="Button_Click_1" />
+        <Button Content="Страховые выплаты" Width="auto" Height="70" Margin="5" Button.Click="Button_Click_2" />
+        <Button Content="Выход" Width="auto" Height="70" Margin="5" Button.Click="Button_Click_3" />
     </WrapPanel>
 </Window>

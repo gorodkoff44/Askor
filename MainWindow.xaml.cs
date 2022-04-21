@@ -24,5 +24,33 @@ namespace Страховая
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            object_str Object_Str = new object_str();
+            //MainWindow Object_str = new MainWindow();
+            Object_Str.Show();
+            Object_Str.Owner = this;
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            dogovora Dogovora = new dogovora();
+            Dogovora.Show();
+            Dogovora.Owner = this;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            StrWip strWip = new StrWip();
+            strWip.Show();
+            strWip.Owner = this;
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

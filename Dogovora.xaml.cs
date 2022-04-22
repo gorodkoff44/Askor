@@ -23,5 +23,11 @@ namespace Страховая
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Данные внесены");
+            this.DialogResult = true;
+        }
     }
 }

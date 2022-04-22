@@ -27,7 +27,7 @@ namespace Страховая
         {
             InitializeComponent();
             //время
-            timer.Interval = TimeSpan.FromSeconds(15);
+            timer.Interval = TimeSpan.FromSeconds(1);
 
             timer.Tick += Timer_Tick;
             timer.Start();

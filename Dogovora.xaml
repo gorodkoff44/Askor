@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Страховая"
         mc:Ignorable="d"
         Title="Договора" Height="450" Width="800">
     <Grid>
@@ -13,14 +12,26 @@
             <RowDefinition Height="38"></RowDefinition>
             <RowDefinition Height="38"></RowDefinition>
             <RowDefinition Height="38"></RowDefinition>
+            <RowDefinition Height="38"></RowDefinition>
+            <RowDefinition Height="38"></RowDefinition>
+            <RowDefinition Height="38"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="26*"></ColumnDefinition>
-            <ColumnDefinition Width="73*"></ColumnDefinition>
+            <ColumnDefinition Width="43*"></ColumnDefinition>
+            <ColumnDefinition Width="221*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Column="0" Grid.Row="0" Text="№ Договора" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Margin="68,10,70,12" />
-        <TextBox Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="500" />
-        <Button Grid.Column="0" Grid.Row="1" Content="Объединение трех столбцов" Grid.ColumnSpan="1"  />
-        <Button Grid.Column="1" Grid.Row="3" Content="Строка 2 Столбец 2"  />
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="№ Договора" HorizontalAlignment="Center" VerticalAlignment="Center" Width="70" Height="16"/>
+        <TextBox Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="500" Height="18"/>
+        <TextBlock Grid.Column="0" Grid.Row="1" Text="ФИО клиента" HorizontalAlignment="Center" VerticalAlignment="Center" Width="74" Height="16"/>
+        <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Width="500" Height="18" />
+        <TextBlock Grid.Column="0" Grid.Row="2" Text="Паспортные данные" HorizontalAlignment="Center" VerticalAlignment="Center" Width="112" Height="16"/>
+        <TextBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" Width="500" Height="18" />
+        <TextBlock Grid.Column="0" Grid.Row="3" Text="Объект страхования" HorizontalAlignment="Center" VerticalAlignment="Center" Width="112" Height="16"/>
+        <TextBox Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Left" Width="500" Height="18"/>
+        <TextBlock Grid.Column="0" Grid.Row="4" Text="Страховая выплата" HorizontalAlignment="Center" VerticalAlignment="Center" Width="112" Height="16"/>
+        <TextBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Width="500" Height="18" />
+        <TextBlock Grid.Column="0" Grid.Row="5" Text="Срок действия до" HorizontalAlignment="Center" VerticalAlignment="Center" Width="112" Height="16"/>
+        <TextBox Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Left" Width="500" Height="18"/>
+        <Button Grid.Column="1" Grid.Row="6" Content="Внести в базу" Background="Blue" Foreground="White" Click="Button_Click"  Width="90"/>
     </Grid>
 </Window>

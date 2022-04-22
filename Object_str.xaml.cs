@@ -38,5 +38,10 @@ namespace Страховая
         {
 
         }
+
+        private void Grid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

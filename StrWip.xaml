@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="Страховые выплаты" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel>
+            <TextBlock Text="№ Договора" Width="auto" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" />
+            <TextBlock Text="ФИО клиента" HorizontalAlignment="Left" Margin="10" >
+                    <TextBox HorizontalAlignment="Right" Width="300" Margin="10" />
+            </TextBlock>
+            <TextBox HorizontalAlignment="Right" Width="300" />
+            <TextBlock Text="Паспортные данные" HorizontalAlignment="Left" Margin="10" >
+                    <TextBox HorizontalAlignment="Right" Width="300" Margin="10" />
+            </TextBlock>
+            <TextBlock Text="Объект страхования" HorizontalAlignment="Left" Margin="10" >
+                    <TextBox HorizontalAlignment="Right" Width="300" Margin="10" />
+            </TextBlock>
+            <TextBlock Text="Страховая выплата" HorizontalAlignment="Left" Margin="10" >
+                    <TextBox HorizontalAlignment="Right" Width="300" Margin="10" />
+            </TextBlock>
+            <TextBlock Text="Срок действия до" HorizontalAlignment="Left" Margin="10" >
+                    <TextBox HorizontalAlignment="Right" Width="300" Margin="10" />
+            </TextBlock>
+        </StackPanel>
     </Grid>
 </Window>

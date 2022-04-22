@@ -47,7 +47,6 @@ namespace Страховая
             object_str Object_Str = new object_str();
             Object_Str.ShowDialog();
             Object_Str.Owner = this;
-
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e) //Договора

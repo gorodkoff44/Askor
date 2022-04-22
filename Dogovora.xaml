@@ -7,19 +7,20 @@
         mc:Ignorable="d"
         Title="Договора" Height="450" Width="800">
     <Grid>
-        <StackPanel>
-            <TextBlock Text="№ Договора" HorizontalAlignment="Left" Margin="10" >
-                    <TextBox HorizontalAlignment="Right" Width="300" Margin="10" />
-            </TextBlock>
-
-            <TextBlock Text="Дата заключения" Margin="10" HorizontalAlignment="Left">
-                <TextBox HorizontalAlignment="Right" Width="300" Margin="10" />
-            </TextBlock>             
-            <TextBlock Text="ФИО клиента" />
-            <TextBlock Text="Паспортные данные" />
-            <TextBlock Text="Объект страхования" />
-            <TextBlock Text="Страховая выплата" />
-            <TextBlock Text="Срок действия до" />
-        </StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38"></RowDefinition>
+            <RowDefinition Height="38"></RowDefinition>
+            <RowDefinition Height="38"></RowDefinition>
+            <RowDefinition Height="38"></RowDefinition>
+            <RowDefinition Height="38"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="26*"></ColumnDefinition>
+            <ColumnDefinition Width="73*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="№ Договора" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Margin="68,10,70,12" />
+        <TextBox Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="500" />
+        <Button Grid.Column="0" Grid.Row="1" Content="Объединение трех столбцов" Grid.ColumnSpan="1"  />
+        <Button Grid.Column="1" Grid.Row="3" Content="Строка 2 Столбец 2"  />
     </Grid>
 </Window>

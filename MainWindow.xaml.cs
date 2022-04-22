@@ -26,6 +26,7 @@ namespace Страховая
         public MainWindow()
         {
             InitializeComponent();
+            
             //время
             timer.Interval = TimeSpan.FromSeconds(1);
 
@@ -44,9 +45,12 @@ namespace Страховая
 
         private void Button_Click(object sender, RoutedEventArgs e) //Объекты страхования
         {
+            
             object_str Object_Str = new object_str();
+            Close();
             Object_Str.ShowDialog();
-            Object_Str.Owner = this;
+            //Object_Str.Owner = this;
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e) //Договора
@@ -54,6 +58,7 @@ namespace Страховая
             dogovora Dogovora = new dogovora();
             Dogovora.ShowDialog();
             Dogovora.Owner = this;
+
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e) //Страховые выплаты
@@ -65,6 +70,7 @@ namespace Страховая
 
         private void Button_Click_3(object sender, RoutedEventArgs e) //Выход
         {
+            
             Close();
         }
     }

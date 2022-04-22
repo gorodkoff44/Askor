@@ -5,14 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Страховая"
         mc:Ignorable="d"
-        Title="Объекты страхования" Height="450" Width="800">
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="Объекты страхования" Height="auto" Width="auto" MinWidth="850" MinHeight="650" >
     <Grid>
-
-        <TextBlock HorizontalAlignment="Center" FontSize="40" Margin="118" Foreground="Black">Выберете объект страхования</TextBlock>
-        <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Button Content="Автомобиль" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Button.Click="Button_Click" />
-            <Button Content="Жильё" Width="150" Height="auto" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Button.Click="Button_Click_1" />
-            <Button Content="Собственная жизнь" Width="150" Height="auto" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Button.Click="Button_Click_2" />
-        </WrapPanel>
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="bg.png"></ImageBrush>
+            </Grid.Background>
+            <Grid.Effect>
+                <BlurEffect Radius="25"/>
+            </Grid.Effect>
+        </Grid>
+        <Grid>
+            <TextBlock HorizontalAlignment="Center" FontSize="40" Margin="118" Foreground="White">Выберете объект страхования</TextBlock>
+            <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button x:Name="Auto" Content="Автомобиль" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Button.Click="Button_Click" />
+                <Button x:Name="Zhil" Content="Жильё" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Button.Click="Button_Click_1" />
+                <Button x:Name="SLife" Content="Собственная жизнь" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Button.Click="Button_Click_2" />
+            </WrapPanel>
+            <Button Content="Выход" Width="100" Height="50" Margin="354,260,346,140" Button.Click="Button_Click_3"  Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
+        </Grid>
     </Grid>
 </Window>

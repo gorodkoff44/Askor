@@ -21,46 +21,40 @@ namespace Страховая
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly DispatcherTimer timer = new DispatcherTimer();
-        public static DateTime Today { get; }
         public MainWindow()
         {
             InitializeComponent();
-            //время
-            timer.Interval = TimeSpan.FromSeconds(1);
-
-            timer.Tick += Timer_Tick;
-            timer.Start();
-            DateTime thisDay = DateTime.Today;
-            lblDate.Content = thisDay.ToString("D"); //Вывод даты
         }
-        void Timer_Tick(object sender, EventArgs e) //время
+        private void Button_Click(object sender, RoutedEventArgs e) //Страница объекты страхования
         {
-            string time = DateTime.Now.ToLongTimeString(); ; //хранит полное время
-            string[] words = time.Split(new char[] { ':' }); //разделение данных часов минут и секунд
-            lblTime.Content = words[0] + ":" + words[1]; //сборка часов и минут в 1 переменную и вывод
-            //Console.WriteLine("Timer_Tick");
+            Glm.Visibility = Visibility.Hidden; //Скрыть главное меню (фон)
+            But.Visibility = Visibility.Hidden; //Скрыть кнопки главного меню
+            ObStrp.Visibility = Visibility.Visible; //Открыть страницу объекты страхования
+            Vix2.Visibility = Visibility.Visible; //Показать кнопку выхода
+            //GlavMenu.Visibility = Visibility.Visible;
+            //object_str Object_Str = new object_str();
+            //Object_Str.ShowDialog();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e) //Объекты страхования
+        private void Button_Click_4(object sender, RoutedEventArgs e) //Тоже самое только в обратную сторону (Кнопка выход)
         {
-            object_str Object_Str = new object_str();
-            Object_Str.ShowDialog();
-            Object_Str.Owner = this;
+            Glm.Visibility = Visibility.Visible;
+            But.Visibility = Visibility.Visible;
+            ObStrp.Visibility = Visibility.Hidden;
+            Vix2.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e) //Договора
         {
             dogovora Dogovora = new dogovora();
             Dogovora.ShowDialog();
-            Dogovora.Owner = this;
+            //Dogovora.Owner = this;
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e) //Страховые выплаты
         {
             StrWip strWip = new StrWip();
             strWip.ShowDialog();
-            strWip.Owner = this;
+            //strWip.Owner = this;
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e) //Выход

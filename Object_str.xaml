@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Страховая"
         mc:Ignorable="d"
-        Title="Объекты страхования" Height="450" Width="800">
+        Title="Объекты страхования" Width="850" Height="650" MinWidth="850" MinHeight="650">
     <Grid>
         <Grid>
             <Grid.Background>
@@ -16,13 +16,21 @@
             </Grid.Effect>
         </Grid>
         <Grid>
-            <TextBlock HorizontalAlignment="Center" FontSize="40" Margin="118" Foreground="White">Выберете объект страхования</TextBlock>
-            <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock HorizontalAlignment="Center" FontSize="40" Margin="103,118,120,246" Foreground="White" RenderTransformOrigin="0.5,0.5" Width="569">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.924"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="1.484"/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>Выберете объект страхования</TextBlock>
+            <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" Margin="156,180">
                 <Button x:Name="Auto" Content="Автомобиль" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Button.Click="Button_Click" />
-                <Button x:Name="Zhil" Content="Жильё" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Button.Click="Button_Click_1" />
                 <Button x:Name="SLife" Content="Собственная жизнь" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Button.Click="Button_Click_2" />
+                <Button x:Name="Zhil" Content="Жильё" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Click="Button_Click_1" />
             </WrapPanel>
-            <Button Content="Выход" Width="100" Height="50" Margin="354,260,346,140" Button.Click="Button_Click_3"  Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
+            <Button Content="Выход" Width="100" Height="50" HorizontalAlignment="Center" Margin="366,345,376,225" Button.Click="Button_Click_3"  Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
         </Grid>
     </Grid>
 </Window>

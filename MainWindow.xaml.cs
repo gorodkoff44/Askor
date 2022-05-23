@@ -25,6 +25,7 @@ namespace Страховая
         {
             InitializeComponent();
         }
+
         private void Button_Click(object sender, RoutedEventArgs e) //Страница объекты страхования
         {
             Glm.Visibility = Visibility.Hidden; //Скрыть главное меню (фон)
@@ -33,14 +34,14 @@ namespace Страховая
             Vix2.Visibility = Visibility.Visible; //Показать кнопку выхода
             Dogovora.Visibility = Visibility.Hidden;
         }
-        private void Button_Click_4(object sender, RoutedEventArgs e) //Тоже самое только в обратную сторону (Кнопка выход)
-        {
-            Glm.Visibility = Visibility.Visible;
-            But.Visibility = Visibility.Visible;
-            ObStrp.Visibility = Visibility.Hidden;
-            Vix2.Visibility = Visibility.Hidden;
-            Dogovora.Visibility = Visibility.Hidden;
-        }
+    private void Button_Click_4(object sender, RoutedEventArgs e) //Тоже самое только в обратную сторону (Кнопка выход)
+    {
+        Glm.Visibility = Visibility.Visible;
+        But.Visibility = Visibility.Visible;
+        ObStrp.Visibility = Visibility.Hidden;
+        Vix2.Visibility = Visibility.Hidden;
+        Dogovora.Visibility = Visibility.Hidden;
+    }
 
         private void Button_Click_1(object sender, RoutedEventArgs e) //Договора
         {

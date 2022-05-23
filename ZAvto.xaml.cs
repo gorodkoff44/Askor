@@ -16,21 +16,13 @@ using System.Windows.Shapes;
 namespace Страховая
 {
     /// <summary>
-    /// Логика взаимодействия для ObStrPage.xaml
+    /// Логика взаимодействия для ZAvto.xaml
     /// </summary>
-    public partial class ObStrPage : Page
+    public partial class ZAvto : Page
     {
-        public ObStrPage()
+        public ZAvto()
         {
             InitializeComponent();
-        }
-
-        private void Auto_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/ZAvto.xaml", UriKind.Relative));
-            //Avto.Visibility = Visibility.Visible;
-            //Table.Visibility = Visibility.Hidden;
-            //Panel.Visibility = Visibility.Hidden;
         }
     }
 }

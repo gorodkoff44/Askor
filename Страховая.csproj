@@ -74,6 +74,9 @@
     <Compile Include="Zastr.xaml.cs">
       <DependentUpon>Zastr.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ZAvto.xaml.cs">
+      <DependentUpon>ZAvto.xaml</DependentUpon>
+    </Compile>
     <Page Include="Auto.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -114,6 +117,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Zastr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ZAvto.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

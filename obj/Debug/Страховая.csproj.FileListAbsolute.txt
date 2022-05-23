@@ -92,3 +92,5 @@ C:\Users\comp0712\Documents\GitHub\Askor\obj\Debug\Zastr.g.cs
 C:\Users\comp0712\Documents\GitHub\Askor\obj\Debug\Zastr.baml
 C:\Users\comp0712\Documents\GitHub\Askor\obj\Debug\ObStrPage.g.cs
 C:\Users\comp0712\Documents\GitHub\Askor\obj\Debug\ObStrPage.baml
+C:\Users\comp0712\Documents\GitHub\Askor\obj\Debug\ZAvto.g.cs
+C:\Users\comp0712\Documents\GitHub\Askor\obj\Debug\ZAvto.baml

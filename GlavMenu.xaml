@@ -20,5 +20,6 @@
         <Label Height="100" Content="00:00" Name="lblTime" FontSize="50" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Right" />
         <Label Content="1 Января 2022 г." Name="lblDate" FontSize="20" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,65" Height="50" />
         
+        
     </Grid>
 </Page>

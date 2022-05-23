@@ -41,5 +41,6 @@ namespace Страховая
             lblTime.Content = words[0] + ":" + words[1]; //сборка часов и минут в 1 переменную и вывод
             //Console.WriteLine("Timer_Tick");
         }
+
     }
 }

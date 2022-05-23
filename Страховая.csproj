@@ -68,8 +68,11 @@
     <Compile Include="RanZakDog.xaml.cs">
       <DependentUpon>RanZakDog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="StrWip.xaml.cs">
-      <DependentUpon>StrWip.xaml</DependentUpon>
+    <Compile Include="SDogovora.xaml.cs">
+      <DependentUpon>SDogovora.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zastr.xaml.cs">
+      <DependentUpon>Zastr.xaml</DependentUpon>
     </Compile>
     <Page Include="Auto.xaml">
       <SubType>Designer</SubType>
@@ -106,7 +109,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="StrWip.xaml">
+    <Page Include="SDogovora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zastr.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -31,9 +31,7 @@ namespace Страховая
             But.Visibility = Visibility.Hidden; //Скрыть кнопки главного меню
             ObStrp.Visibility = Visibility.Visible; //Открыть страницу объекты страхования
             Vix2.Visibility = Visibility.Visible; //Показать кнопку выхода
-            //GlavMenu.Visibility = Visibility.Visible;
-            //object_str Object_Str = new object_str();
-            //Object_Str.ShowDialog();
+            Dogovora.Visibility = Visibility.Hidden;
         }
         private void Button_Click_4(object sender, RoutedEventArgs e) //Тоже самое только в обратную сторону (Кнопка выход)
         {
@@ -41,20 +39,16 @@ namespace Страховая
             But.Visibility = Visibility.Visible;
             ObStrp.Visibility = Visibility.Hidden;
             Vix2.Visibility = Visibility.Hidden;
+            Dogovora.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e) //Договора
         {
-            dogovora Dogovora = new dogovora();
-            Dogovora.ShowDialog();
-            //Dogovora.Owner = this;
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e) //Страховые выплаты
-        {
-            StrWip strWip = new StrWip();
-            strWip.ShowDialog();
-            //strWip.Owner = this;
+            Glm.Visibility = Visibility.Hidden;
+            But.Visibility = Visibility.Hidden;
+            ObStrp.Visibility = Visibility.Hidden;
+            Vix2.Visibility = Visibility.Visible;
+            Dogovora.Visibility = Visibility.Visible;
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e) //Выход

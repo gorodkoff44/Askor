@@ -41,6 +41,19 @@ namespace Страховая
             lblTime.Content = words[0] + ":" + words[1]; //сборка часов и минут в 1 переменную и вывод
             //Console.WriteLine("Timer_Tick");
         }
+        private void Button_Click(object sender, RoutedEventArgs e) //Страница объекты страхования
+        {
+            NavigationService.Navigate(new Uri("/ObStrPage.xaml", UriKind.Relative));
+        }
+        private void Button_Click_1(object sender, RoutedEventArgs e) //Договора
+        {
+            NavigationService.Navigate(new Uri("/SDogovora.xaml", UriKind.Relative));
+        }
 
+        private void Button_Click_3(object sender, RoutedEventArgs e) //Выход
+        {
+            MainWindow main = Application.Current.MainWindow as MainWindow;
+            main.Close();
+        }
     }
 }

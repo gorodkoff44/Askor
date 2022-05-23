@@ -17,24 +17,53 @@
                 <BlurEffect Radius="25"/>
             </Grid.Effect>
         </Grid>
-        <Grid Margin="0,66,0,0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="39*"/>
-                <ColumnDefinition Width="161*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <TextBlock Grid.Column="0" Grid.Row="0" Text="Имя" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Margin="70,13,64,13" Width="22"></TextBlock>
-            <TextBox x:Name="Imya" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Margin="10" Height="22" />
+        <Grid Margin="0,48,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="26*"/>
+                    <ColumnDefinition Width="131*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="0" Grid.Row="0" Text="Фамилия" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" />
+                <TextBlock Grid.Column="0" Grid.Row="1" Text="Имя" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" />
+                <TextBlock Grid.Column="0" Grid.Row="2" Text="Отчество" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" />
+                <TextBlock Grid.Column="0" Grid.Row="3" Text="Гос. номер" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" />
+                <TextBlock Grid.Column="0" Grid.Row="4" Text="Категория" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" />
+                <TextBlock Grid.Column="0" Grid.Row="5" Text="Марка авто" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" />
+                <TextBlock Grid.Column="0" Grid.Row="6" Text="Модель" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16"></TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" />
+                <TextBlock Grid.Column="0" Grid.Row="7" Text="Год выпуска" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="7" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="0" Grid.Row="8" Text="Мощность (л.с.)" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" />
+            <TextBlock Grid.Column="0" Grid.Row="9" Text="VIN авто" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="9" VerticalAlignment="Center" />
+            <TextBlock Grid.Column="0" Grid.Row="9" Text="VIN авто" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="9" VerticalAlignment="Center" />
+            <TextBlock Grid.Column="0" Grid.Row="10" Text="Серия и номер ПТС" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="10" VerticalAlignment="Center" />
+            <TextBlock Grid.Column="0" Grid.Row="11" Text="Дата выдачи" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="11" VerticalAlignment="Center" />
         </Grid>
+        
     </Grid>
 </Page>

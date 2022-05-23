@@ -18,7 +18,8 @@
             </Grid.Effect>
         </Grid>
         <Grid>
-            <TextBlock x:Name="Table" HorizontalAlignment="Center" FontSize="40" Margin="103,118,120,246" Foreground="White" RenderTransformOrigin="0.5,0.5" Width="569" Visibility="Visible">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock x:Name="Table" HorizontalAlignment="Center" FontSize="40" Foreground="White" RenderTransformOrigin="0.5,0.5" Width="569" Visibility="Visible" Margin="30">
                 <TextBlock.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -27,11 +28,12 @@
                         <TranslateTransform X="1.484"/>
                     </TransformGroup>
                 </TextBlock.RenderTransform>Выберете объект страхования</TextBlock>
-            <WrapPanel x:Name="Panel" Visibility="Visible" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" Margin="156,180">
+            <WrapPanel x:Name="Panel" Visibility="Visible" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" Margin="30">
                 <Button x:Name="Auto" Content="Автомобиль" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Click="Auto_Click" />
                 <Button x:Name="SLife" Content="Собственная жизнь" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
                 <Button x:Name="Zhil" Content="Жильё" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
             </WrapPanel>
+            </StackPanel>
         </Grid>
     </Grid>
 </Page>

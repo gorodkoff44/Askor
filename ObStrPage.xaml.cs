@@ -28,9 +28,6 @@ namespace Страховая
         private void Auto_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/ZAvto.xaml", UriKind.Relative));
-            //Avto.Visibility = Visibility.Visible;
-            //Table.Visibility = Visibility.Hidden;
-            //Panel.Visibility = Visibility.Hidden;
         }
     }
 }

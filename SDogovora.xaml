@@ -9,12 +9,21 @@
       Title="SDogovora">
 
     <Grid>
-        <Grid Margin="0,80,0,0">
-            <ListView Name="lvUsers">
+        <Grid>
+            <!--фон-->
+            <Grid.Background>
+                <ImageBrush ImageSource="bg.png"></ImageBrush>
+            </Grid.Background>
+            <Grid.Effect>
+                <BlurEffect Radius="25"/>
+            </Grid.Effect>
+        </Grid>
+        <Grid>
+            <ListView Name="lvUsers" Background="#80ffffff" Foreground="#000000" SelectionChanged="lvUsers_SelectionChanged">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding Name}" />
-                        <GridViewColumn Header="Age" Width="50" DisplayMemberBinding="{Binding Age}" />
+                        <GridViewColumn Header="ФИО" Width="320" DisplayMemberBinding="{Binding Name}" />
+                        <GridViewColumn Header="Дата рождения" Width="100" DisplayMemberBinding="{Binding Age}" />
                     </GridView>
                 </ListView.View>
             </ListView>

@@ -21,7 +21,7 @@ namespace Страховая
     public partial class ZAvto : Page
     {
         //Фамилия, имя, отчество, марка авто, модель, год выпуска, мощность, VIN, ПТС, дата выдачи
-        string fa, im, ot, gosn, cat, mark,mod,year,moshnost,vin,pts,datav;
+        string fa, im, ot,datr, gosn, cat, mark,mod,year,moshnost,vin,pts,datav;
         public ZAvto()
         {
             InitializeComponent();
@@ -33,6 +33,7 @@ namespace Страховая
             fa = fam.Text;
             im = imya.Text;
             ot = otch.Text;
+            datr = DR.Text;
             gosn = gosnum.Text;
             cat = Categ.Text;
             mark = MarkaAvto.Text;
@@ -43,7 +44,7 @@ namespace Страховая
             pts = snpts.Text;
             datav = vidacha.Text;
 
-            if (fa==""||im==""||ot==""||gosn==""||cat == "" ||mark == "" ||mod == "" ||year == "" ||moshnost == "" ||vin == "" ||pts == "" ||datav == "")
+            if (fa==""||im==""||ot==""||datr == "" || gosn ==""||cat == "" ||mark == "" ||mod == "" ||year == "" ||moshnost == "" ||vin == "" ||pts == "" ||datav == "")
             {
                 MessageBox.Show("Введены не все данные" , "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;

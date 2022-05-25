@@ -37,6 +37,7 @@
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
             </Grid.RowDefinitions> <!--выпадающий список-->
             <TextBlock FontSize="14" Grid.Column="0" Grid.Row="0" Text="Фамилия" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             <TextBox x:Name="fam" FontSize="14" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
@@ -44,17 +45,20 @@
             <TextBox x:Name="imya" FontSize="14" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
             <TextBlock FontSize="14" Grid.Column="0" Grid.Row="2" Text="Отчество" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             <TextBox x:Name="otch" FontSize="14" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
-            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="3" Text="Гос. номер" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-            <TextBox x:Name="gosnum" FontSize="14" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
-            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="4" Text="Категория" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-            <ComboBox FontSize="14" Name="Categ" VerticalAlignment="Center" Grid.Column="1" Grid.Row="4" Background="#55000000" BorderBrush="#88ffffff" >
+            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="3" Text="Дата рождения" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBox x:Name="DR" FontSize="14" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="4" Text="Гос. номер" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            
+            <TextBox x:Name="gosnum" FontSize="14" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="5" Text="Категория" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <ComboBox FontSize="14" Name="Categ" VerticalAlignment="Center" Grid.Column="1" Grid.Row="5" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" >
                 <!--элементы вып списка-->
                 <TextBlock FontSize="14" Background="#55000000" Foreground="White">A</TextBlock>
                 <TextBlock FontSize="14" Background="#55000000" Foreground="White">B</TextBlock>
                 <TextBlock FontSize="14" Background="#55000000" Foreground="White">C</TextBlock>
             </ComboBox>
-            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="5" Text="Марка авто" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-            <ComboBox Name="MarkaAvto" FontSize="14" VerticalAlignment="Center" Grid.Column="1" Grid.Row="5" Background="#55000000" BorderBrush="#88ffffff" >
+            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="6" Text="Марка авто" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <ComboBox Name="MarkaAvto" FontSize="14" VerticalAlignment="Center" Grid.Column="1" Grid.Row="6" Background="#55000000" BorderBrush="#88ffffff" >
                 <TextBlock FontSize="14" Background="#55000000" Foreground="White">Hundai</TextBlock> <!--элементы вып списка-->
                 <TextBlock FontSize="14" Background="#55000000" Foreground="White">Kia</TextBlock>
                 <TextBlock FontSize="14" Background="#55000000" Foreground="White">Renault</TextBlock>
@@ -64,19 +68,19 @@
                 <TextBlock FontSize="14" Background="#55000000" Foreground="White">Mazda</TextBlock>
                 <TextBlock FontSize="14" Background="#55000000" Foreground="White">ВАЗ</TextBlock>
             </ComboBox>
-            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="6" Text="Модель" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16"></TextBlock>
-            <TextBox x:Name="model" FontSize="14" Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
-            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="7" Text="Год выпуска" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-            <TextBox x:Name="gv" FontSize="14" Grid.Column="1" Grid.Row="7" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
-            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="8" Text="Мощность (л.с.)" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-            <TextBox x:Name="ls" FontSize="14" Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
-            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="9" Text="VIN авто" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-            <TextBox x:Name="vina" FontSize="14" Grid.Column="1" Grid.Row="9" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
-            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="10" Text="Серия и номер ПТС" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-            <TextBox x:Name="snpts" FontSize="14" Grid.Column="1" Grid.Row="10" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
-            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="11" Text="Дата выдачи" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-            <TextBox x:Name="vidacha" FontSize="14" Grid.Column="1" Grid.Row="11" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
-            <Button FontSize="14" Grid.Column="1" Grid.Row="12" Content="Внести данные" x:Name="save" Click="save_Click" Width="120" Foreground="White" Background="#55000000"  />
+            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="7" Text="Модель" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16"></TextBlock>
+            <TextBox x:Name="model" FontSize="14" Grid.Column="1" Grid.Row="7" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="8" Text="Год выпуска" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBox x:Name="gv" FontSize="14" Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="9" Text="Мощность (л.с.)" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBox x:Name="ls" FontSize="14" Grid.Column="1" Grid.Row="9" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="10" Text="VIN авто" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBox x:Name="vina" FontSize="14" Grid.Column="1" Grid.Row="10" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="11" Text="Серия и номер ПТС" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBox x:Name="snpts" FontSize="14" Grid.Column="1" Grid.Row="11" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="12" Text="Дата выдачи" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBox x:Name="vidacha" FontSize="14" Grid.Column="1" Grid.Row="12" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+            <Button FontSize="14" Grid.Column="1" Grid.Row="13" Content="Внести данные" x:Name="save" Click="save_Click" Width="120" Foreground="White" Background="#55000000"  />
         </Grid>
     </Grid>
 </Page>

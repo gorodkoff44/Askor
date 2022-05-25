@@ -68,6 +68,11 @@ namespace Страховая
             items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
             lvUsers.ItemsSource = items;
         }
+
+        private void lvUsers_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
     public class User
     {

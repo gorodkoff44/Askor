@@ -29,5 +29,15 @@ namespace Страховая
         {
             NavigationService.Navigate(new Uri("/ZAvto.xaml", UriKind.Relative));
         }
+
+        private void SLife_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Zaglushka.xaml", UriKind.Relative));
+        }
+
+        private void Zhil_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Zaglushka.xaml", UriKind.Relative));
+        }
     }
 }

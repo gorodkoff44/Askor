@@ -71,6 +71,9 @@
     <Compile Include="SDogovora.xaml.cs">
       <DependentUpon>SDogovora.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Zaglushka.xaml.cs">
+      <DependentUpon>Zaglushka.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Zastr.xaml.cs">
       <DependentUpon>Zastr.xaml</DependentUpon>
     </Compile>
@@ -113,6 +116,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SDogovora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zaglushka.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

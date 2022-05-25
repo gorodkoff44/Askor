@@ -17,8 +17,6 @@
                         <GridViewColumn Header="Age" Width="50" DisplayMemberBinding="{Binding Age}" />
                     </GridView>
                 </ListView.View>
-
-
             </ListView>
         </Grid>
     </Grid>

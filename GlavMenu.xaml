@@ -20,11 +20,9 @@
         <Label Height="100" Content="00:00" Name="lblTime" FontSize="50" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Right" />
         <Label Content="1 Января 2022 г." Name="lblDate" FontSize="20" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,65" Height="50" />
         <StackPanel x:Name="But" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="40" Width="200" Visibility="Visible" >
-            <Button Content="Застраховать" Width="auto" Height="70" Margin="10" Button.Click="Button_Click" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
-            <Button Content="Договора" Width="auto" Height="70" Margin="10" Button.Click="Button_Click_1" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
-
-            <Button Content="Выход" Height="70" Margin="10" Button.Click="Button_Click_3" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
+            <Button FontSize="14" Content="Застраховать" Width="auto" Height="70" Margin="10" Button.Click="Button_Click" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
+            <Button FontSize="14" Content="Договора" Width="auto" Height="70" Margin="10" Button.Click="Button_Click_1" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
+            <Button FontSize="14" Content="Выход" Height="70" Margin="10" Button.Click="Button_Click_3" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
         </StackPanel>
-
     </Grid>
 </Page>

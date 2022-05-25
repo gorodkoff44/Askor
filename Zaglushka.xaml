@@ -1,0 +1,34 @@
+﻿<Page x:Class="Страховая.Zaglushka"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Страховая"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Zaglushka">
+
+    <Grid>
+        <Grid> <!--фон-->
+            <Grid.Background>
+                <ImageBrush ImageSource="bg.png"></ImageBrush>
+            </Grid.Background>
+            <Grid.Effect>
+                <BlurEffect Radius="25"/>
+            </Grid.Effect>
+        </Grid>
+        <Grid>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock x:Name="Table" HorizontalAlignment="Center" FontSize="40" Foreground="White" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Margin="30">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="0.924" AngleY="-0.142"/>
+                            <RotateTransform/>
+                            <TranslateTransform X="1.474" Y="-0.603"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>Этот раздел ещё не готов</TextBlock>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

@@ -19,7 +19,7 @@
         </Grid>
         <Grid>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBlock x:Name="Table" HorizontalAlignment="Center" FontSize="40" Foreground="White" RenderTransformOrigin="0.5,0.5" Width="569" Visibility="Visible" Margin="30">
+                <TextBlock x:Name="Table" HorizontalAlignment="Center" FontSize="40" Foreground="White" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Margin="30">
                 <TextBlock.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -29,9 +29,9 @@
                     </TransformGroup>
                 </TextBlock.RenderTransform>Выберете объект страхования</TextBlock>
             <WrapPanel x:Name="Panel" Visibility="Visible" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" Margin="30">
-                <Button x:Name="Auto" Content="Автомобиль" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Click="Auto_Click" />
-                <Button x:Name="SLife" Content="Собственная жизнь" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
-                <Button x:Name="Zhil" Content="Жильё" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
+                    <Button x:Name="Auto" FontSize="14" Content="Автомобиль" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Click="Auto_Click" />
+                    <Button x:Name="SLife" FontSize="14" Content="Собственная жизнь" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Click="SLife_Click" />
+                    <Button x:Name="Zhil" FontSize="14" Content="Жильё" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Click="Zhil_Click" />
             </WrapPanel>
             </StackPanel>
         </Grid>

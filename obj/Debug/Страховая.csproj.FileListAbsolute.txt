@@ -185,3 +185,10 @@ C:\Users\comp0712\Desktop\Podgotovka\Askor\obj\Debug\ObStrPage.g.cs
 C:\Users\comp0712\Desktop\Podgotovka\Askor\obj\Debug\ZAvto.g.cs
 C:\Users\comp0712\Desktop\Podgotovka\Askor\obj\Debug\ObStrPage.baml
 C:\Users\comp0712\Desktop\Podgotovka\Askor\obj\Debug\ZAvto.baml
+C:\Users\comp0712\Desktop\Podgotovka\Askor\bin\Debug\EntityFramework.dll
+C:\Users\comp0712\Desktop\Podgotovka\Askor\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\comp0712\Desktop\Podgotovka\Askor\bin\Debug\EntityFramework.xml
+C:\Users\comp0712\Desktop\Podgotovka\Askor\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\comp0712\Desktop\Podgotovka\Askor\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\comp0712\Desktop\Podgotovka\Askor\obj\Debug\Страховая_Content.g.cs
+C:\Users\comp0712\Desktop\Podgotovka\Askor\obj\Debug\Страховая.csproj.CopyComplete

@@ -18,15 +18,14 @@
                 <BlurEffect Radius="25"/>
             </Grid.Effect>
         </Grid>
-        <Grid>
-            <ListView Name="lvUsers" Background="#80ffffff" Foreground="#000000" SelectionChanged="lvUsers_SelectionChanged">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn Header="ФИО" Width="320" DisplayMemberBinding="{Binding Name}" />
-                        <GridViewColumn Header="Дата рождения" Width="100" DisplayMemberBinding="{Binding Age}" />
-                    </GridView>
-                </ListView.View>
-            </ListView>
-        </Grid>
+        <DataGrid x:Name="DGridClient" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding F}" Width="150"></DataGridTextColumn>
+                <DataGridTextColumn Header="Имя" Binding="{Binding I}" Width="150"></DataGridTextColumn>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding O}" Width="150"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата рождения" Binding="{Binding DR}" Width="150"></DataGridTextColumn>
+            </DataGrid.Columns>
+
+        </DataGrid>
     </Grid>
 </Page>

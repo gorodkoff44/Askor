@@ -11,7 +11,7 @@
     <Grid>
         <Grid> <!--фон-->
             <Grid.Background>
-                <ImageBrush ImageSource="bg.png"></ImageBrush>
+                <ImageBrush ImageSource="Resources/bg.png"></ImageBrush>
             </Grid.Background>
             <Grid.Effect>
                 <BlurEffect Radius="25"/>
@@ -19,7 +19,7 @@
         </Grid>
         <Grid>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBlock x:Name="Table" HorizontalAlignment="Center" FontSize="40" Foreground="White" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Margin="30">
+                <TextBlock HorizontalAlignment="Center" FontSize="40" Foreground="White" RenderTransformOrigin="0.5,0.5" Margin="30">
                     <TextBlock.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>

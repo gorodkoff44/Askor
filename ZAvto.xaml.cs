@@ -29,7 +29,6 @@ namespace Страховая
 
         private void save_Click(object sender, RoutedEventArgs e)
         {
-            
             fa = fam.Text;
             im = imya.Text;
             ot = otch.Text;

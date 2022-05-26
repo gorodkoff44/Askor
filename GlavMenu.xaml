@@ -10,7 +10,7 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="bg.png"></ImageBrush>
+            <ImageBrush ImageSource="Resources/bg.png"></ImageBrush>
         </Grid.Background>
         <TextBlock Text="Аскор" FontSize="100" TextAlignment="Left" Foreground="White" HorizontalAlignment="Center" Margin="50" >
             <TextBlock.Effect>

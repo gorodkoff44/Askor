@@ -6,8 +6,6 @@
         mc:Ignorable="d"
         Title="Аскор" Height="auto" Width="auto" MinWidth="850" MinHeight="650" >
     <Grid>
-
         <Frame x:Name="Glm" Source="GlavMenu.xaml"></Frame>
-        <Button x:Name="Vix2" Content="Назад" Width="60" Height="40" Margin="20" HorizontalAlignment="Left" VerticalAlignment="Top"  Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Visibility="Hidden" />
     </Grid>
 </Window>

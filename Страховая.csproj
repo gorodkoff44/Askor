@@ -56,17 +56,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Auto.xaml.cs">
-      <DependentUpon>Auto.xaml</DependentUpon>
-    </Compile>
     <Compile Include="GlavMenu.xaml.cs">
       <DependentUpon>GlavMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="ObStrPage.xaml.cs">
       <DependentUpon>ObStrPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="RanZakDog.xaml.cs">
-      <DependentUpon>RanZakDog.xaml</DependentUpon>
     </Compile>
     <Compile Include="SDogovora.xaml.cs">
       <DependentUpon>SDogovora.xaml</DependentUpon>
@@ -74,20 +68,9 @@
     <Compile Include="Zaglushka.xaml.cs">
       <DependentUpon>Zaglushka.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Zastr.xaml.cs">
-      <DependentUpon>Zastr.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ZAvto.xaml.cs">
       <DependentUpon>ZAvto.xaml</DependentUpon>
     </Compile>
-    <Page Include="Auto.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Dogovora.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="GlavMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -100,9 +83,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Dogovora.xaml.cs">
-      <DependentUpon>Dogovora.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -111,19 +91,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RanZakDog.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="SDogovora.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Zaglushka.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Zastr.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -159,7 +131,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="bg.png" />
+    <Resource Include="Resources\bg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

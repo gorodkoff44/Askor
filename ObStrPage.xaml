@@ -11,7 +11,7 @@
     <Grid>
         <Grid>
             <Grid.Background>
-                <ImageBrush ImageSource="bg.png"></ImageBrush>
+                <ImageBrush ImageSource="Resources/bg.png"></ImageBrush>
             </Grid.Background>
             <Grid.Effect>
                 <BlurEffect Radius="25"/>
@@ -19,7 +19,7 @@
         </Grid>
         <Grid>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBlock x:Name="Table" HorizontalAlignment="Center" FontSize="40" Foreground="White" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Margin="30">
+                <TextBlock HorizontalAlignment="Center" FontSize="40" Foreground="White" RenderTransformOrigin="0.5,0.5" Margin="30">
                 <TextBlock.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -28,7 +28,7 @@
                         <TranslateTransform X="1.484"/>
                     </TransformGroup>
                 </TextBlock.RenderTransform>Выберете объект страхования</TextBlock>
-            <WrapPanel x:Name="Panel" Visibility="Visible" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" Margin="30">
+            <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" Margin="30">
                     <Button x:Name="Auto" FontSize="14" Content="Автомобиль" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Click="Auto_Click" />
                     <Button x:Name="SLife" FontSize="14" Content="Собственная жизнь" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Click="SLife_Click" />
                     <Button x:Name="Zhil" FontSize="14" Content="Жильё" Width="150" Height="50" Margin="5" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" Click="Zhil_Click" />

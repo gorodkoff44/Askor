@@ -12,7 +12,7 @@
         <Grid>
             <!--фон-->
             <Grid.Background>
-                <ImageBrush ImageSource="bg.png"></ImageBrush>
+                <ImageBrush ImageSource="Resources/bg.png"></ImageBrush>
             </Grid.Background>
             <Grid.Effect>
                 <BlurEffect Radius="25"/>

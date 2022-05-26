@@ -40,32 +40,6 @@ namespace Страховая
             items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
             items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
             items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
-            items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
-            items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
-            items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
-            items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
-            items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
-            items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
-            items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
-            items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
-            items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
-            items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
-            items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
-            items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
-            items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
-            items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
-            items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
-            items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
-            items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
             lvUsers.ItemsSource = items;
         }
 

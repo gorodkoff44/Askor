@@ -21,7 +21,7 @@ namespace Страховая
     public partial class ZAvto : Page
     {
         //Фамилия, имя, отчество, марка авто, модель, год выпуска, мощность, VIN, ПТС, дата выдачи
-        string fa, im, ot,datr, gosn, cat, mark,mod,year,moshnost,vin,pts,datav;
+        string fa, im, ot,datr, gosn, cat, mark,mod,year,moshnost,vin,pts,datav,pasport;
         public ZAvto()
         {
             InitializeComponent();
@@ -42,6 +42,7 @@ namespace Страховая
             vin = vina.Text;
             pts = snpts.Text;
             datav = vidacha.Text;
+            pasport = Pass.Text;
 
             if (fa==""||im==""||ot==""||datr == "" || gosn ==""||cat == "" ||mark == "" ||mod == "" ||year == "" ||moshnost == "" ||vin == "" ||pts == "" ||datav == "")
             {

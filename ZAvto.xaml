@@ -38,6 +38,7 @@
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
             </Grid.RowDefinitions> <!--выпадающий список-->
             <TextBlock FontSize="14" Grid.Column="0" Grid.Row="0" Text="Фамилия" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             <TextBox x:Name="fam" FontSize="14" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
@@ -79,7 +80,9 @@
             <TextBox x:Name="snpts" FontSize="14" Grid.Column="1" Grid.Row="11" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
             <TextBlock FontSize="14" Grid.Column="0" Grid.Row="12" Text="Дата выдачи" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             <TextBox x:Name="vidacha" FontSize="14" Grid.Column="1" Grid.Row="12" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
-            <Button FontSize="14" Grid.Column="1" Grid.Row="13" Content="Внести данные" x:Name="save" Click="save_Click" Width="120" Foreground="White" Background="#55000000"  />
+            <TextBlock FontSize="14" Grid.Column="0" Grid.Row="13" Text="Серия номер паспорта" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBox x:Name="Pass" FontSize="14" Grid.Column="1" Grid.Row="13" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+            <Button FontSize="14" Grid.Column="1" Grid.Row="14" Content="Внести данные" x:Name="save" Click="save_Click" Width="120" Foreground="White" Background="#55000000"  />
         </Grid>
     </Grid>
 </Page>

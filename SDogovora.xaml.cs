@@ -25,5 +25,25 @@ namespace Страховая
             InitializeComponent();
             DGridClient.ItemsSource = AskorEntities.GetContext().Client.ToList();
         }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            var AskorForRemoving = DGridClient.SelectedItems.Cast<Client>().ToList();
+            if (MessageBox.Show($"Вы точно хотите удалить следующие {AskorForRemoving.Count()} элементов?", "Внимание!",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    AskorEntities.GetContext().Client.RemoveRange(AskorForRemoving);
+                    AskorEntities.GetContext().SaveChanges();
+                    MessageBox.Show("Данные удалены!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+                }
+            }
+        }
     }
 }
+

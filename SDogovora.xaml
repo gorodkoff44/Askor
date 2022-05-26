@@ -18,7 +18,7 @@
                 <BlurEffect Radius="25"/>
             </Grid.Effect>
         </Grid>
-        <DataGrid x:Name="DGridClient" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid x:Name="DGridClient" AutoGenerateColumns="False" IsReadOnly="True" Background="#55ffffff" Margin="0,0,0,53">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding F}" Width="150"></DataGridTextColumn>
                 <DataGridTextColumn Header="Имя" Binding="{Binding I}" Width="150"></DataGridTextColumn>
@@ -27,5 +27,6 @@
             </DataGrid.Columns>
 
         </DataGrid>
+        <Button x:Name="Delete" Click="Delete_Click" Content="Удалить выделенное" Margin="667,420,0,0" Width="150" Background="#55000000" Foreground="White" />
     </Grid>
 </Page>

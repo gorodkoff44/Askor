@@ -41,13 +41,13 @@
                 <RowDefinition Height="30"/>
             </Grid.RowDefinitions> <!--выпадающий список-->
             <TextBlock FontSize="14" Grid.Column="0" Grid.Row="0" Text="Фамилия" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-            <TextBox x:Name="fam" FontSize="14" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+            <TextBox x:Name="fam" Text="{Binding F}" FontSize="14" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
             <TextBlock FontSize="14" Grid.Column="0" Grid.Row="1" Text="Имя" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-            <TextBox x:Name="imya" FontSize="14" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+            <TextBox x:Name="imya" Text="{Binding I}" FontSize="14" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
             <TextBlock FontSize="14" Grid.Column="0" Grid.Row="2" Text="Отчество" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-            <TextBox x:Name="otch" FontSize="14" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+            <TextBox x:Name="otch" Text="{Binding O}" FontSize="14" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
             <TextBlock FontSize="14" Grid.Column="0" Grid.Row="3" Text="Дата рождения" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-            <TextBox x:Name="DR" FontSize="14" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+            <TextBox x:Name="DR" Text="{Binding DR}" FontSize="14" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
             <TextBlock FontSize="14" Grid.Column="0" Grid.Row="4" Text="Гос. номер" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             <TextBox x:Name="gosnum" FontSize="14" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
             <TextBlock FontSize="14" Grid.Column="0" Grid.Row="5" Text="Категория" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
@@ -81,7 +81,7 @@
             <TextBlock FontSize="14" Grid.Column="0" Grid.Row="12" Text="Дата выдачи" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             <TextBox x:Name="vidacha" FontSize="14" Grid.Column="1" Grid.Row="12" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
             <TextBlock FontSize="14" Grid.Column="0" Grid.Row="13" Text="Серия номер паспорта" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-            <TextBox x:Name="Pass" FontSize="14" Grid.Column="1" Grid.Row="13" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+            <TextBox x:Name="Pass" Text="{Binding Passport}" FontSize="14" Grid.Column="1" Grid.Row="13" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
             <Button FontSize="14" Grid.Column="1" Grid.Row="14" Content="Внести данные" x:Name="save" Click="save_Click" Width="120" Foreground="White" Background="#55000000"  />
         </Grid>
     </Grid>

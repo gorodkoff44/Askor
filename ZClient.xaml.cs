@@ -45,10 +45,10 @@ namespace Страховая
                 return;
             }
 
-            AskorEntities.GetContext().Client.Add(_currentClient);
+            AskorEntities1.GetContext().Client.Add(_currentClient);
             try
             {
-                AskorEntities.GetContext().SaveChanges();
+                AskorEntities1.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена!");
                 NavigationService.Navigate(new Uri("/ZAvto.xaml", UriKind.Relative));
             }

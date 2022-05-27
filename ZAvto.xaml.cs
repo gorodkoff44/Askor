@@ -48,10 +48,10 @@ namespace Страховая
             //    return;
             //}
 
-                AskorEntities.GetContext().Avto.Add(_currentAvto);
+                AskorEntities1.GetContext().Avto.Add(_currentAvto);
             try
             {
-                AskorEntities.GetContext().SaveChanges();
+                AskorEntities1.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена!");
             }
             catch (Exception ex)

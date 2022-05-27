@@ -27,7 +27,7 @@ namespace Страховая
 
         private void Auto_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/ZAvto.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ZClient.xaml", UriKind.Relative));
         }
 
         private void SLife_Click(object sender, RoutedEventArgs e)

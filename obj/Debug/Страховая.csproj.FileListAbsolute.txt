@@ -225,3 +225,7 @@ E:\Askor\obj\Debug\Страховая.csproj.CoreCompileInputs.cache
 E:\Askor\obj\Debug\Страховая.csproj.CopyComplete
 E:\Askor\obj\Debug\Страховая.exe
 E:\Askor\obj\Debug\Страховая.pdb
+E:\Askor\obj\Debug\ZClient.g.cs
+E:\Askor\obj\Debug\ZClient.baml
+E:\Askor\obj\Debug\TestAvto.g.cs
+E:\Askor\obj\Debug\TestAvto.baml

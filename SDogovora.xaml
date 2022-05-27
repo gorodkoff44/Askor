@@ -28,5 +28,6 @@
 
         </DataGrid>
         <Button x:Name="Delete" Click="Delete_Click" Content="Удалить выделенное" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Width="150" Height="30" Background="#55000000" Foreground="White" />
+        <Button x:Name="TestAvto" Click="TestAvto_Click" Content="Test Avto" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="20" Width="150" Height="30" />
     </Grid>
 </Page>

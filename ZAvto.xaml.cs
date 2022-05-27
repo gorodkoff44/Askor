@@ -20,18 +20,44 @@ namespace Страховая
     /// </summary>
     public partial class ZAvto : Page
     {
-        private Client _currentClient = new Client();
+        private Avto _currentAvto = new Avto();
         //Фамилия, имя, отчество, марка авто, модель, год выпуска, мощность, VIN, ПТС, дата выдачи
         //string fa, im, ot,datr, gosn, cat, mark,mod,year,moshnost,vin,pts,datav,pasport;
         public ZAvto()
         {
             InitializeComponent();
-            DataContext = _currentClient;
+            DataContext = _currentAvto;
         }
 
         private void save_Click(object sender, RoutedEventArgs e)
         {
-            AskorEntities.GetContext().Client.Add(_currentClient);
+            StringBuilder errors = new StringBuilder();
+            //if (string.IsNullOrWhiteSpace(_currentClient.F))
+            //    errors.AppendLine("Укажите фамилию");
+            //if (string.IsNullOrWhiteSpace(_currentClient.I))
+            //    errors.AppendLine("Укажите имя");
+            //if (string.IsNullOrWhiteSpace(_currentClient.O))
+            //    errors.AppendLine("Укажите отчество");
+            //if (string.IsNullOrWhiteSpace(_currentClient.F))
+            //    errors.AppendLine("Укажите фамилию");
+            //if (_currentClient.DR==null)
+            //    errors.AppendLine("Введите дату рождения");
+            //if (errors.Length >0)
+            //{
+            //    MessageBox.Show(errors.ToString());
+            //    return;
+            //}
+
+                AskorEntities.GetContext().Avto.Add(_currentAvto);
+            try
+            {
+                AskorEntities.GetContext().SaveChanges();
+                MessageBox.Show("Информация сохранена!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
             //fa = fam.Text;
             //im = imya.Text;
             //ot = otch.Text;

@@ -16,16 +16,16 @@ using System.Windows.Shapes;
 namespace Страховая
 {
     /// <summary>
-    /// Логика взаимодействия для SDogovora.xaml
+    /// Логика взаимодействия для TestAvto.xaml
     /// </summary>
-    public partial class SDogovora : Page
+    public partial class TestAvto : Page
     {
-        public SDogovora()
+
+        public TestAvto()
         {
             InitializeComponent();
-            DGridClient.ItemsSource = AskorEntities.GetContext().Client.ToList();
+            DGridClient.ItemsSource = AskorEntities.GetContext().Avto.ToList();
         }
-
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
             var AskorForRemoving = DGridClient.SelectedItems.Cast<Client>().ToList();
@@ -44,11 +44,5 @@ namespace Страховая
                 }
             }
         }
-
-        private void TestAvto_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/TestAvto.xaml", UriKind.Relative));
-        }
     }
 }
-

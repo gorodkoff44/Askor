@@ -1,0 +1,53 @@
+﻿<Page x:Class="Страховая.ZClient"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Страховая"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ZClient">
+
+    <Grid>
+        <Grid>
+            <Grid>
+                <!--фон-->
+                <Grid.Background>
+                    <ImageBrush ImageSource="Resources/bg.png"></ImageBrush>
+                </Grid.Background>
+                <Grid.Effect>
+                    <BlurEffect Radius="25"/>
+                </Grid.Effect>
+            </Grid>
+            <Grid Margin="0,48,0,0">
+                <Grid.ColumnDefinitions>
+                    <!--столбцы-->
+                    <ColumnDefinition Width="26*"/>
+                    <ColumnDefinition Width="131*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <!--строки-->
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <!--выпадающий список-->
+                <TextBlock FontSize="14" Grid.Column="0" Grid.Row="0" Text="Фамилия" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <TextBox x:Name="fam" Text="{Binding F}" FontSize="14" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+                <TextBlock FontSize="14" Grid.Column="0" Grid.Row="1" Text="Имя" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <TextBox x:Name="imya" Text="{Binding I}" FontSize="14" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+                <TextBlock FontSize="14" Grid.Column="0" Grid.Row="2" Text="Отчество" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <TextBox x:Name="otch" Text="{Binding O}" FontSize="14" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+                <TextBlock FontSize="14" Grid.Column="0" Grid.Row="3" Text="Дата рождения" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <TextBox x:Name="DR" Text="{Binding DR}" FontSize="14" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+                <TextBox Text="{Binding Passport}"  FontSize="14" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+                <TextBlock FontSize="14" Grid.Column="0" Grid.Row="4" Text="Серия номер паспорта" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <Button FontSize="14" Grid.Column="1" Grid.Row="5" Content="Внести данные" x:Name="save" Click="save_Click" Width="120" Foreground="White" Background="#55000000"  />
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

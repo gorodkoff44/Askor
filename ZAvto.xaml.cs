@@ -20,15 +20,18 @@ namespace Страховая
     /// </summary>
     public partial class ZAvto : Page
     {
+        private Client _currentClient = new Client();
         //Фамилия, имя, отчество, марка авто, модель, год выпуска, мощность, VIN, ПТС, дата выдачи
         //string fa, im, ot,datr, gosn, cat, mark,mod,year,moshnost,vin,pts,datav,pasport;
         public ZAvto()
         {
             InitializeComponent();
+            DataContext = _currentClient;
         }
 
         private void save_Click(object sender, RoutedEventArgs e)
         {
+            AskorEntities.GetContext().Client.Add(_currentClient);
             //fa = fam.Text;
             //im = imya.Text;
             //ot = otch.Text;

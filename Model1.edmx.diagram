@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f5296d1a38514438a0ab699e95d0cbd4" Name="Diagram1">
+      <Diagram DiagramId="603cd28bba9d4eafa0376799bec46c48" Name="Diagram1">
         <EntityTypeShape EntityType="AskorModel.Avto" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="AskorModel.Client" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="AskorModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />

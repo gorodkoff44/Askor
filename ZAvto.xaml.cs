@@ -27,6 +27,7 @@ namespace Страховая
         {
             InitializeComponent();
             DataContext = _currentAvto;
+
         }
 
         private void save_Click(object sender, RoutedEventArgs e)
@@ -47,11 +48,10 @@ namespace Страховая
             //    MessageBox.Show(errors.ToString());
             //    return;
             //}
-
-                AskorEntities1.GetContext().Avto.Add(_currentAvto);
+                AskorBaseEntities.GetContext().Avto.Add(_currentAvto);
             try
             {
-                AskorEntities1.GetContext().SaveChanges();
+                AskorBaseEntities.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена!");
             }
             catch (Exception ex)

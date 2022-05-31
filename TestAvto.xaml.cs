@@ -24,7 +24,7 @@ namespace Страховая
         public TestAvto()
         {
             InitializeComponent();
-            DGridClient.ItemsSource = AskorEntities1.GetContext().Avto.ToList();
+            DGridClient.ItemsSource = AskorBaseEntities.GetContext().Avto.ToList();
         }
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
@@ -34,8 +34,8 @@ namespace Страховая
             {
                 try
                 {
-                    AskorEntities1.GetContext().Client.RemoveRange(AskorForRemoving);
-                    AskorEntities1.GetContext().SaveChanges();
+                    AskorBaseEntities.GetContext().Client.RemoveRange(AskorForRemoving);
+                    AskorBaseEntities.GetContext().SaveChanges();
                     MessageBox.Show("Данные удалены!");
                 }
                 catch (Exception ex)

@@ -18,13 +18,13 @@
           <Property Name="VIN" Type="text" Nullable="false" />
           <Property Name="PTS" Type="text" Nullable="false" />
           <Property Name="Data_Vidachi" Type="date" Nullable="false" />
-          <Property Name="Passport" Type="int" Nullable="false" />
+          <Property Name="Passport" Type="decimal" Precision="18" Scale="0" Nullable="false" />
         </EntityType>
         <EntityType Name="Client">
           <Key>
             <PropertyRef Name="Passport" />
           </Key>
-          <Property Name="Passport" Type="int" Nullable="false" />
+          <Property Name="Passport" Type="decimal" Precision="18" Scale="0" Nullable="false" />
           <Property Name="F" Type="text" Nullable="false" />
           <Property Name="I" Type="text" Nullable="false" />
           <Property Name="O" Type="text" />
@@ -79,14 +79,14 @@
           <Property Name="VIN" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="PTS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Data_Vidachi" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="Passport" Type="Int32" Nullable="false" />
+          <Property Name="Passport" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
           <NavigationProperty Name="Client" Relationship="Self.FK_Avto_Client" FromRole="Avto" ToRole="Client" />
         </EntityType>
         <EntityType Name="Client">
           <Key>
             <PropertyRef Name="Passport" />
           </Key>
-          <Property Name="Passport" Type="Int32" Nullable="false" />
+          <Property Name="Passport" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
           <Property Name="F" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="I" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="O" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
@@ -115,7 +115,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="AskorEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="AskorBaseEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Avto" EntityType="Self.Avto" />
           <EntitySet Name="Client" EntityType="Self.Client" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
@@ -129,7 +129,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище AskorModelContainer" CdmEntityContainer="AskorEntities1">
+        <EntityContainerMapping StorageEntityContainer="Хранилище AskorModelContainer" CdmEntityContainer="AskorBaseEntities">
           <EntitySetMapping Name="Avto">
             <EntityTypeMapping TypeName="AskorModel.Avto">
               <MappingFragment StoreEntitySet="Avto">

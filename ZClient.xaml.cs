@@ -20,6 +20,7 @@ namespace Страховая
     /// </summary>
     public partial class ZClient : Page
     {
+        
         private Client _currentClient = new Client();
         public ZClient()
         {
@@ -45,10 +46,10 @@ namespace Страховая
                 return;
             }
 
-            AskorEntities1.GetContext().Client.Add(_currentClient);
+            AskorBaseEntities.GetContext().Client.Add(_currentClient);
             try
             {
-                AskorEntities1.GetContext().SaveChanges();
+                AskorBaseEntities.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена!");
                 NavigationService.Navigate(new Uri("/ZAvto.xaml", UriKind.Relative));
             }

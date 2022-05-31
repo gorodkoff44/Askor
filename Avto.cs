@@ -23,7 +23,7 @@ namespace Страховая
         public string VIN { get; set; }
         public string PTS { get; set; }
         public System.DateTime Data_Vidachi { get; set; }
-        public int Passport { get; set; }
+        public decimal Passport { get; set; }
     
         public virtual Client Client { get; set; }
     }

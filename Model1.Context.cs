@@ -13,20 +13,20 @@ namespace Страховая
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AskorEntities1 : DbContext
+    public partial class AskorBaseEntities : DbContext
     {
-        private static AskorEntities1 _context;
-        public AskorEntities1()
-            : base("name=AskorEntities1")
+        private static AskorBaseEntities _context;
+        public AskorBaseEntities()
+            : base("name=AskorBaseEntities")
         {
         }
-        public static AskorEntities1 GetContext()
+
+        public static AskorBaseEntities GetContext()
         {
             if (_context == null)
-                _context = new AskorEntities1();
+                _context = new AskorBaseEntities();
             return _context;
         }
-    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

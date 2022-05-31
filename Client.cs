@@ -14,7 +14,7 @@ namespace Страховая
     
     public partial class Client
     {
-        public int Passport { get; set; }
+        public decimal Passport { get; set; }
         public string F { get; set; }
         public string I { get; set; }
         public string O { get; set; }

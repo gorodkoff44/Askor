@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -7,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Страховая
 {
-    class ClientContext : DbContext
+    class ClientContext : System.Data.Entity.DbContext
     {
-        public DbSet<DBClient> DBClients { get; set; }
-        public DbSet<DBAvto> DBAvtos { get; set; }
-        protected override void OnConfiguring ( DbContextOptionsBuilder optionsBuilder)
+        public System.Data.Entity.DbSet<DBClient> DBClients { get; set; }
+        public System.Data.Entity.DbSet<DBAvto> DBAvtos { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source=DBAvto.db");
             optionsBuilder.UseLazyLoadingProxies();

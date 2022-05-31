@@ -288,3 +288,4 @@ C:\Users\Comp0707\Desktop\Askor\obj\Debug\Zaglushka.baml
 C:\Users\Comp0707\Desktop\Askor\obj\Debug\ZAvto.baml
 C:\Users\Comp0707\Desktop\Askor\obj\Debug\ZClient.baml
 C:\Users\Comp0707\Desktop\Askor\obj\Debug\Страховая.csproj.CopyComplete
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\Страховая.exe.config

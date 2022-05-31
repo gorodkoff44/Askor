@@ -35,10 +35,10 @@ namespace Страховая
                 errors.AppendLine("Укажите имя");
             if (string.IsNullOrWhiteSpace(_currentClient.O))
                 errors.AppendLine("Укажите отчество");
-            if (string.IsNullOrWhiteSpace(_currentClient.F))
-                errors.AppendLine("Укажите фамилию");
             if (_currentClient.DR == null)
                 errors.AppendLine("Введите дату рождения");
+            if ((_currentClient.Passport < 1000000000)||(_currentClient.Passport > 9999999999))
+                errors.AppendLine("Введите серию и номер паспорта");
             if (errors.Length > 0)
             {
                 MessageBox.Show(errors.ToString());

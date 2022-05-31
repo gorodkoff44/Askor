@@ -266,3 +266,25 @@ C:\Users\Comp0707\Desktop\Власов ДЭ\Askor\obj\Debug\Страховая.P
 C:\Users\Comp0707\Desktop\Власов ДЭ\Askor\obj\Debug\Страховая.csproj.GenerateResource.cache
 C:\Users\Comp0707\Desktop\Власов ДЭ\Askor\obj\Debug\Страховая.csproj.CoreCompileInputs.cache
 C:\Users\Comp0707\Desktop\Власов ДЭ\Askor\obj\Debug\Страховая.csproj.CopyComplete
+C:\Users\Comp0707\Desktop\Askor\bin\Debug\EntityFramework.dll
+C:\Users\Comp0707\Desktop\Askor\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Comp0707\Desktop\Askor\bin\Debug\EntityFramework.xml
+C:\Users\Comp0707\Desktop\Askor\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Comp0707\Desktop\Askor\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Comp0707\Desktop\Askor\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\GlavMenu.g.cs
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\ObStrPage.g.cs
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\SDogovora.g.cs
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\TestAvto.g.cs
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\Zaglushka.g.cs
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\ZAvto.g.cs
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\ZClient.g.cs
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\Страховая_Content.g.cs
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\GlavMenu.baml
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\ObStrPage.baml
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\SDogovora.baml
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\TestAvto.baml
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\Zaglushka.baml
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\ZAvto.baml
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\ZClient.baml
+C:\Users\Comp0707\Desktop\Askor\obj\Debug\Страховая.csproj.CopyComplete

@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Страховая
+{
+    class Temp
+    {
+        public Temp(int psp)
+        {
+            this.psp = psp;
+        }
+        public int psp { get; set; }
+
+    }
+}

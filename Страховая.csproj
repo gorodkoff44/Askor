@@ -98,6 +98,7 @@
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Temp.cs" />
     <Compile Include="TestAvto.xaml.cs">
       <DependentUpon>TestAvto.xaml</DependentUpon>
     </Compile>

@@ -23,10 +23,18 @@ namespace Страховая
         private Avto _currentAvto = new Avto();
         //Фамилия, имя, отчество, марка авто, модель, год выпуска, мощность, VIN, ПТС, дата выдачи
         //string fa, im, ot,datr, gosn, cat, mark,mod,year,moshnost,vin,pts,datav,pasport;
+        int pss;
         public ZAvto()
         {
             InitializeComponent();
+            ZClient zClient = new ZClient();
+            Console.WriteLine($"zClient.ps {zClient.ps}");
             DataContext = _currentAvto;
+            
+            pss = zClient.ps;
+            Temp temp = new Temp(1);
+            Pass.Text = temp.ToString();
+            Console.WriteLine($"pss {pss}");
         }
 
         private void save_Click(object sender, RoutedEventArgs e)

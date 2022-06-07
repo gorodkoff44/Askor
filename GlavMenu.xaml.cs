@@ -47,6 +47,7 @@ namespace Страховая
         private void Button_Click_1(object sender, RoutedEventArgs e) //Договора
         {
             NavigationService.Navigate(new Uri("/SDogovora.xaml", UriKind.Relative));
+            //NavigationService.Navigate(new Uri("/TestAvto.xaml", UriKind.Relative));
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e) //Выход

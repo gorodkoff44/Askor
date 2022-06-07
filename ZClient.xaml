@@ -43,8 +43,8 @@
                 <TextBlock FontSize="14" Grid.Column="0" Grid.Row="2" Text="Отчество" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                 <TextBox x:Name="otch" Text="{Binding O}" FontSize="14" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
                 <TextBlock FontSize="14" Grid.Column="0" Grid.Row="3" Text="Дата рождения" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-                <TextBox x:Name="DR" Text="{Binding DR}" FontSize="14" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
-                <TextBox Text="{Binding Passport}"  FontSize="14" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+                <TextBox x:Name="DR" Text="{Binding DR, StringFormat=dd.MM.yyyy}" FontSize="14" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
+                <TextBox x:Name="pass" Text="{Binding Passport}"  FontSize="14" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
                 <TextBlock FontSize="14" Grid.Column="0" Grid.Row="4" Text="Серия номер паспорта" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                 <Button FontSize="14" Grid.Column="1" Grid.Row="5" Content="Внести данные" x:Name="save" Click="save_Click" Width="120" Foreground="White" Background="#55000000"  />
             </Grid>

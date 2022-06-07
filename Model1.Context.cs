@@ -13,17 +13,17 @@ namespace Страховая
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AskorEntities1 : DbContext
+    public partial class AskorOneEntities1 : DbContext
     {
-        private static AskorEntities1 _context;
-        public AskorEntities1()
-            : base("name=AskorEntities1")
+        private static AskorOneEntities1 _context;
+        public AskorOneEntities1()
+            : base("name=AskorOneEntities1")
         {
         }
-        public static AskorEntities1 GetContext()
+        public static AskorOneEntities1 GetContext()
         {
             if (_context == null)
-                _context = new AskorEntities1();
+                _context = new AskorOneEntities1();
             return _context;
         }
     
@@ -32,8 +32,6 @@ namespace Страховая
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Avto> Avto { get; set; }
-        public virtual DbSet<Client> Client { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<Client_Avto> Client_Avto { get; set; }
     }
 }

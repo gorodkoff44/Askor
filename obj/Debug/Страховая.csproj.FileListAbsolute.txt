@@ -305,7 +305,6 @@ C:\Users\comp0711\Desktop\Askor1\obj\Debug\ObStrPage.g.cs
 C:\Users\comp0711\Desktop\Askor1\obj\Debug\SDogovora.g.cs
 C:\Users\comp0711\Desktop\Askor1\obj\Debug\TestAvto.g.cs
 C:\Users\comp0711\Desktop\Askor1\obj\Debug\Zaglushka.g.cs
-C:\Users\comp0711\Desktop\Askor1\obj\Debug\ZAvto.g.cs
 C:\Users\comp0711\Desktop\Askor1\obj\Debug\ZClient.g.cs
 C:\Users\comp0711\Desktop\Askor1\obj\Debug\App.g.cs
 C:\Users\comp0711\Desktop\Askor1\obj\Debug\Страховая_Content.g.cs
@@ -316,7 +315,6 @@ C:\Users\comp0711\Desktop\Askor1\obj\Debug\ObStrPage.baml
 C:\Users\comp0711\Desktop\Askor1\obj\Debug\SDogovora.baml
 C:\Users\comp0711\Desktop\Askor1\obj\Debug\TestAvto.baml
 C:\Users\comp0711\Desktop\Askor1\obj\Debug\Zaglushka.baml
-C:\Users\comp0711\Desktop\Askor1\obj\Debug\ZAvto.baml
 C:\Users\comp0711\Desktop\Askor1\obj\Debug\ZClient.baml
 C:\Users\comp0711\Desktop\Askor1\obj\Debug\Страховая.g.resources
 C:\Users\comp0711\Desktop\Askor1\obj\Debug\Страховая.Properties.Resources.resources

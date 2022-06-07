@@ -24,18 +24,18 @@ namespace Страховая
         public TestAvto()
         {
             InitializeComponent();
-            DGridClient.ItemsSource = AskorEntities1.GetContext().Avto.ToList();
+            DGridClient.ItemsSource = AskorOneEntities1.GetContext().Client_Avto.ToList();
         }
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            var AskorForRemoving = DGridClient.SelectedItems.Cast<Client>().ToList();
+            var AskorForRemoving = DGridClient.SelectedItems.Cast<Client_Avto>().ToList();
             if (MessageBox.Show($"Вы точно хотите удалить следующие {AskorForRemoving.Count()} элементов?", "Внимание!",
                 MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 try
                 {
-                    AskorEntities1.GetContext().Client.RemoveRange(AskorForRemoving);
-                    AskorEntities1.GetContext().SaveChanges();
+                    AskorOneEntities1.GetContext().Client_Avto.RemoveRange(AskorForRemoving);
+                    AskorOneEntities1.GetContext().SaveChanges();
                     MessageBox.Show("Данные удалены!");
                 }
                 catch (Exception ex)

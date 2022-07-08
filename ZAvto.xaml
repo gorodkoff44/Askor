@@ -70,7 +70,7 @@
             <TextBox x:Name="vidacha" Text="{Binding Data_Vidachi}" FontSize="14" Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
             <TextBlock FontSize="14" Grid.Column="0" Grid.Row="9" Text="Серия номер паспорта" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             <TextBox x:Name="Pass" Text="{Binding Passport}"  FontSize="14" Grid.Column="1" Grid.Row="9" VerticalAlignment="Center" Foreground="White" Background="#55000000" BorderBrush="#88ffffff" />
-            <Button FontSize="14" Grid.Column="1" Grid.Row="10" Content="Внести данные" x:Name="save" Click="save_Click" Width="120" Foreground="White" Background="#55000000"  />
+            <Button FontSize="14" Grid.Column="1" Grid.Row="11" Content="Внести данные" x:Name="save" Click="save_Click" Width="120" Foreground="White" Background="#55000000"  />
         </Grid>
     </Grid>
 </Page>

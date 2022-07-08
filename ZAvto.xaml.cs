@@ -20,13 +20,14 @@ namespace Страховая
     /// </summary>
     public partial class ZAvto : Page
     {
-        private Avto _currentAvto = new Avto();
+        private DBAvto _currentAvto = new DBAvto();
         //Фамилия, имя, отчество, марка авто, модель, год выпуска, мощность, VIN, ПТС, дата выдачи
         //string fa, im, ot,datr, gosn, cat, mark,mod,year,moshnost,vin,pts,datav,pasport;
         public ZAvto()
         {
             InitializeComponent();
             DataContext = _currentAvto;
+            Pass.Text = Convert.ToString(App.Current.Resources["Passport"]);
 
         }
 
@@ -48,10 +49,10 @@ namespace Страховая
             //    MessageBox.Show(errors.ToString());
             //    return;
             //}
-                AskorBaseEntities.GetContext().Avto.Add(_currentAvto);
+                DbAskorEntities.GetContext().DBAvto.Add(_currentAvto);
             try
             {
-                AskorBaseEntities.GetContext().SaveChanges();
+                DbAskorEntities.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена!");
             }
             catch (Exception ex)

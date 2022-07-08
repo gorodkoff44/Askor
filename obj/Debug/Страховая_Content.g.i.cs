@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model1.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model1.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/sqlitepclraw.lib.e_sqlite3.2.0.4/runtimes/win-x86/native/e_sqlite3.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/sqlitepclraw.lib.e_sqlite3.2.0.4/runtimes/win-x64/native/e_sqlite3.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/sqlitepclraw.lib.e_sqlite3.2.0.4/runtimes/win-arm/native/e_sqlite3.dll")]

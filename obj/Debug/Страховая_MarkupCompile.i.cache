@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Comp0707\Desktop\Askor\obj\Debug\
+C:\Users\gorod\Documents\GitHub\Askor\obj\Debug\
 Страховая
 none
 false
 DEBUG;TRACE
-C:\Users\Comp0707\Desktop\Askor\App.xaml
-8-810967102
-3988125691
-161123210301
-160405350170
-GlavMenu.xaml;MainWindow.xaml;ObStrPage.xaml;SDogovora.xaml;TestAvto.xaml;Zaglushka.xaml;ZAvto.xaml;ZClient.xaml;
+C:\Users\gorod\Documents\GitHub\Askor\App.xaml
+9982229547
+5-1314404666
+231769453666
+160295631951
+GlavMenu.xaml;InfoClient.xaml;MainWindow.xaml;ObStrPage.xaml;SDogovora.xaml;TestAvto.xaml;Zaglushka.xaml;ZAvto.xaml;ZClient.xaml;
 
-True
+False
 

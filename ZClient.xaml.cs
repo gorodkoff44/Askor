@@ -21,7 +21,7 @@ namespace Страховая
     public partial class ZClient : Page
     {
         
-        private Client _currentClient = new Client();
+        private DBClient _currentClient = new DBClient();
         public ZClient()
         {
             InitializeComponent();
@@ -38,18 +38,17 @@ namespace Страховая
                 errors.AppendLine("Укажите отчество");
             if (_currentClient.DR == null)
                 errors.AppendLine("Введите дату рождения");
-            if ((_currentClient.Passport < 1000000000)||(_currentClient.Passport > 9999999999))
-                errors.AppendLine("Введите серию и номер паспорта");
             if (errors.Length > 0)
             {
                 MessageBox.Show(errors.ToString());
                 return;
             }
 
-            AskorBaseEntities.GetContext().Client.Add(_currentClient);
+            DbAskorEntities.GetContext().DBClient.Add(_currentClient);
             try
             {
-                AskorBaseEntities.GetContext().SaveChanges();
+                App.Current.Resources["Passport"] = pt;
+                DbAskorEntities.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена!");
                 NavigationService.Navigate(new Uri("/ZAvto.xaml", UriKind.Relative));
             }

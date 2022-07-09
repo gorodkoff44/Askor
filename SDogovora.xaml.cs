@@ -23,35 +23,17 @@ namespace Страховая
         public SDogovora()
         {
             InitializeComponent();
-            List<User> items = new List<User>();
-            items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
-            items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
-            items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
-            items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
-            items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
-            items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
-            items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
-            items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
-            items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            items.Add(new User() { Name = "Петров Петр Петрович", Age = 39 });
-            items.Add(new User() { Name = "Смирнов Смир Смирович", Age = 13 });
-            items.Add(new User() { Name = "Иванов Иван Иванович", Age = 42 });
-            lvUsers.ItemsSource = items;
+            DGridClient.ItemsSource = DbAskorNewEntities.GetContext().Strahov.ToList();
         }
 
-        private void lvUsers_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Edit_Click(object sender, RoutedEventArgs e)
         {
 
         }
-    }
-    public class User
-    {
-        public string Name { get; set; }
 
-        public int Age { get; set; }
+        private void Del_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

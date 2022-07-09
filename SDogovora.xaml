@@ -19,14 +19,21 @@
             </Grid.Effect>
         </Grid>
         <Grid>
-            <ListView Name="lvUsers" Background="#80ffffff" Foreground="#000000" SelectionChanged="lvUsers_SelectionChanged">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn Header="ФИО" Width="320" DisplayMemberBinding="{Binding Name}" />
-                        <GridViewColumn Header="Дата рождения" Width="100" DisplayMemberBinding="{Binding Age}" />
-                    </GridView>
-                </ListView.View>
-            </ListView>
+            <DataGrid x:Name="DGridClient" AutoGenerateColumns="False" Margin="0,0,0,60" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Фамилия" Binding="{Binding F}" Width="*" />
+                    <DataGridTextColumn Header="Имя" Binding="{Binding I}" Width="*" />
+                    <DataGridTextColumn Header="Отчество" Binding="{Binding O}" Width="*" />
+                    <DataGridTemplateColumn Width="auto">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Редактировать" x:Name="edit" Click="Edit_Click" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button x:Name="del" Click="Del_Click" Content="Удалить" FontSize="18" Width="90" Height="50" Margin="653,390,57,10" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
         </Grid>
     </Grid>
 </Page>

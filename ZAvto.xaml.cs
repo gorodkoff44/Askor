@@ -20,41 +20,24 @@ namespace Страховая
     /// </summary>
     public partial class ZAvto : Page
     {
-        //Фамилия, имя, отчество, марка авто, модель, год выпуска, мощность, VIN, ПТС, дата выдачи
-        string fa, im, ot,datr, gosn, cat, mark,mod,year,moshnost,vin,pts,datav,pasport;
+        private Strahov _currentClient = new Strahov();
         public ZAvto()
         {
             InitializeComponent();
+            DataContext = _currentClient;
         }
 
         private void save_Click(object sender, RoutedEventArgs e)
         {
-            fa = fam.Text;
-            im = imya.Text;
-            ot = otch.Text;
-            datr = DR.Text;
-            gosn = gosnum.Text;
-            cat = Categ.Text;
-            mark = MarkaAvto.Text;
-            mod = model.Text;
-            year = gv.Text;
-            moshnost = ls.Text;
-            vin = vina.Text;
-            pts = snpts.Text;
-            datav = vidacha.Text;
-            pasport = Pass.Text;
-
-            if (fa==""||im==""||ot==""||datr == "" || gosn ==""||cat == "" ||mark == "" ||mod == "" ||year == "" ||moshnost == "" ||vin == "" ||pts == "" ||datav == "")
+            try
             {
-                MessageBox.Show("Введены не все данные" , "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
+                DbAskorNewEntities.GetContext().Strahov.Add(_currentClient);
+                MessageBox.Show("Данные внесены");
             }
-            if (MessageBox.Show("Вы" + " " + fa + " " + im + " " + ot + ", а гос.номер вашего " + mark + " " + mod + ": " + gosn,
-                    "Save file",
-                    MessageBoxButton.YesNo,
-                    MessageBoxImage.Question) == MessageBoxResult.Yes)
+            catch
             {
-                // Do something here
+                MessageBox.Show("Произошла ошибка");
+                return;
             }
         }
     }

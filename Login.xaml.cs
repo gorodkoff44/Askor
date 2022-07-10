@@ -22,11 +22,20 @@ namespace Страховая
         public Login()
         {
             InitializeComponent();
+            //Login login = new Login();
+            //login.Owner = this;
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            if (ln.Text == "admin")
+            {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                Close();
+            }
+            else
+                MessageBox.Show("Не верный логин или пароль");
         }
     }
 }

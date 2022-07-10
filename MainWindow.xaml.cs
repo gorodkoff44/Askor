@@ -25,7 +25,10 @@ namespace Страховая
         {
             InitializeComponent();
             Login login = new Login();
-            login.Show();
+            
+            //login.Show();
+            //Close();
+            //login.Owner = this;
         }
     }
 }

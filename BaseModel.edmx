@@ -5,33 +5,17 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="Хранилище DbAskorNewModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Ошибки, обнаруженные при создании:
-предупреждение 6002: В таблице или представлении "DbAskorNew.dbo.Login" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
         <EntityType Name="Login">
           <Key>
-            <PropertyRef Name="Login" />
-            <PropertyRef Name="Password" />
+            <PropertyRef Name="id" />
           </Key>
           <Property Name="Login" Type="text" Nullable="false" />
           <Property Name="Password" Type="text" Nullable="false" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
-        <!--Ошибки, обнаруженные при создании:
-предупреждение 6002: В таблице или представлении "DbAskorNew.dbo.Strahov" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
         <EntityType Name="Strahov">
           <Key>
             <PropertyRef Name="Passport" />
-            <PropertyRef Name="F" />
-            <PropertyRef Name="I" />
-            <PropertyRef Name="DR" />
-            <PropertyRef Name="Gosnum" />
-            <PropertyRef Name="Categ" />
-            <PropertyRef Name="Marka_avto" />
-            <PropertyRef Name="Model" />
-            <PropertyRef Name="God_avto" />
-            <PropertyRef Name="Power" />
-            <PropertyRef Name="VIN" />
-            <PropertyRef Name="PTS" />
-            <PropertyRef Name="Data_Vidachi" />
           </Key>
           <Property Name="Passport" Type="float" Nullable="false" />
           <Property Name="F" Type="text" Nullable="false" />
@@ -59,70 +43,26 @@
           <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
         <EntityContainer Name="Хранилище DbAskorNewModelContainer">
+          <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Strahov" EntityType="Self.Strahov" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Login" EntityType="Self.Login" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Login].[Login] AS [Login], 
-    [Login].[Password] AS [Password]
-    FROM [dbo].[Login] AS [Login]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="Strahov" EntityType="Self.Strahov" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Strahov].[Passport] AS [Passport], 
-    [Strahov].[F] AS [F], 
-    [Strahov].[I] AS [I], 
-    [Strahov].[O] AS [O], 
-    [Strahov].[DR] AS [DR], 
-    [Strahov].[Gosnum] AS [Gosnum], 
-    [Strahov].[Categ] AS [Categ], 
-    [Strahov].[Marka_avto] AS [Marka_avto], 
-    [Strahov].[Model] AS [Model], 
-    [Strahov].[God_avto] AS [God_avto], 
-    [Strahov].[Power] AS [Power], 
-    [Strahov].[VIN] AS [VIN], 
-    [Strahov].[PTS] AS [PTS], 
-    [Strahov].[Data_Vidachi] AS [Data_Vidachi]
-    FROM [dbo].[Strahov] AS [Strahov]</DefiningQuery>
-          </EntitySet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbAskorNewModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="principal_id" Type="Int32" Nullable="false" />
-          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="Int32" />
-          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
-        </EntityType>
         <EntityType Name="Login">
           <Key>
-            <PropertyRef Name="Login1" />
-            <PropertyRef Name="Password" />
+            <PropertyRef Name="id" />
           </Key>
           <Property Name="Login1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Strahov">
           <Key>
             <PropertyRef Name="Passport" />
-            <PropertyRef Name="F" />
-            <PropertyRef Name="I" />
-            <PropertyRef Name="DR" />
-            <PropertyRef Name="Gosnum" />
-            <PropertyRef Name="Categ" />
-            <PropertyRef Name="Marka_avto" />
-            <PropertyRef Name="Model" />
-            <PropertyRef Name="God_avto" />
-            <PropertyRef Name="Power" />
-            <PropertyRef Name="VIN" />
-            <PropertyRef Name="PTS" />
-            <PropertyRef Name="Data_Vidachi" />
           </Key>
           <Property Name="Passport" Type="Double" Nullable="false" />
           <Property Name="F" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
@@ -139,33 +79,33 @@
           <Property Name="PTS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Data_Vidachi" Type="DateTime" Nullable="false" Precision="0" />
         </EntityType>
-        <EntityContainer Name="DbAskorNewEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityContainer Name="DbAskorEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Login" EntityType="Self.Login" />
           <EntitySet Name="Strahov" EntityType="Self.Strahov" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище DbAskorNewModelContainer" CdmEntityContainer="DbAskorNewEntities">
-          <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="DbAskorNewModel.sysdiagrams">
-              <MappingFragment StoreEntitySet="sysdiagrams">
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-                <ScalarProperty Name="version" ColumnName="version" />
-                <ScalarProperty Name="definition" ColumnName="definition" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
+        <EntityContainerMapping StorageEntityContainer="Хранилище DbAskorNewModelContainer" CdmEntityContainer="DbAskorEntities">
           <EntitySetMapping Name="Login">
             <EntityTypeMapping TypeName="DbAskorNewModel.Login">
               <MappingFragment StoreEntitySet="Login">
                 <ScalarProperty Name="Login1" ColumnName="Login" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -186,6 +126,17 @@
                 <ScalarProperty Name="VIN" ColumnName="VIN" />
                 <ScalarProperty Name="PTS" ColumnName="PTS" />
                 <ScalarProperty Name="Data_Vidachi" ColumnName="Data_Vidachi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="DbAskorNewModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

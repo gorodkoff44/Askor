@@ -219,3 +219,5 @@ C:\Users\gorod\Documents\GitHub\Askor\bin\Debug\EntityFramework.xml
 C:\Users\gorod\Documents\GitHub\Askor\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\gorod\Documents\GitHub\Askor\bin\Debug\ru\EntityFramework.resources.dll
 C:\Users\gorod\Documents\GitHub\Askor\obj\Debug\Страховая.csproj.CopyComplete
+C:\Users\gorod\Documents\GitHub\Askor\obj\Debug\EditPage.g.cs
+C:\Users\gorod\Documents\GitHub\Askor\obj\Debug\EditPage.baml

@@ -13,17 +13,17 @@ namespace Страховая
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DbAskorNewEntities : DbContext
+    public partial class DbAskorEntities : DbContext
     {
-        private static DbAskorNewEntities _context;
-        public DbAskorNewEntities()
-            : base("name=DbAskorNewEntities")
+        private static DbAskorEntities _context;
+        public DbAskorEntities()
+            : base("name=DbAskorEntities")
         {
         }
-        public static DbAskorNewEntities GetContext()
+        public static DbAskorEntities GetContext()
         {
             if (_context == null)
-                _context = new DbAskorNewEntities();
+                _context = new DbAskorEntities();
             return _context;
         }
 
@@ -32,8 +32,8 @@ namespace Страховая
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Login> Login { get; set; }
         public virtual DbSet<Strahov> Strahov { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }

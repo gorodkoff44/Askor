@@ -23,17 +23,38 @@ namespace Страховая
         public SDogovora()
         {
             InitializeComponent();
-            DGridClient.ItemsSource = DbAskorNewEntities.GetContext().Strahov.ToList();
+            DGridClient.ItemsSource = DbAskorEntities.GetContext().Strahov.ToList();
         }
 
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
+            //NavigationService.Navigate(new Uri("/ObStrPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new EditPage((sender as Button).DataContext as Strahov));
 
         }
 
         private void Del_Click(object sender, RoutedEventArgs e)
         {
+            var StrahovForRemoving = DGridClient.SelectedItems.Cast<Strahov>().ToList();
+            if (MessageBox.Show($"Вы точно хотите удалить следующие {StrahovForRemoving.Count()} элементов?", "Внимание",MessageBoxButton.YesNo,MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    DbAskorEntities.GetContext().Strahov.RemoveRange(StrahovForRemoving);
+                    DbAskorEntities.GetContext().SaveChanges();
+                    MessageBox.Show("Данные удалены");
+                    DGridClient.ItemsSource = DbAskorEntities.GetContext().Strahov.ToList();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+                }
+            }
+        }
 
+        private void Refresh_Click(object sender, RoutedEventArgs e)
+        {
+            DGridClient.ItemsSource = DbAskorEntities.GetContext().Strahov.ToList();
         }
     }
 }

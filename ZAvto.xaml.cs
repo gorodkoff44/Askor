@@ -20,24 +20,40 @@ namespace Страховая
     /// </summary>
     public partial class ZAvto : Page
     {
-        private Strahov _currentClient = new Strahov();
+        private Strahov _currentStrahov = new Strahov();
         public ZAvto()
         {
             InitializeComponent();
-            DataContext = _currentClient;
+            DataContext = _currentStrahov;
         }
 
         private void save_Click(object sender, RoutedEventArgs e)
         {
+            StringBuilder errors = new StringBuilder();
+            if (string.IsNullOrWhiteSpace(_currentStrahov.F))
+                errors.AppendLine("Укажите фамилию");
+            if (string.IsNullOrWhiteSpace(_currentStrahov.I))
+                errors.AppendLine("Укажите имя");
+            if (string.IsNullOrWhiteSpace(_currentStrahov.O))
+                errors.AppendLine("Укажите отчество");
+            if (_currentStrahov.DR == null)
+                errors.AppendLine("Введите дату рождения");
+            if (errors.Length > 0)
+            {
+                MessageBox.Show(errors.ToString());
+                return;
+            }
+
+            DbAskorEntities.GetContext().Strahov.Add(_currentStrahov);
             try
             {
-                DbAskorNewEntities.GetContext().Strahov.Add(_currentClient);
-                MessageBox.Show("Данные внесены");
+                DbAskorEntities.GetContext().SaveChanges();
+                MessageBox.Show("Информация сохранена!");
+                NavigationService.Navigate(new Uri("/GlavMenu.xaml", UriKind.Relative));
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Произошла ошибка");
-                return;
+                MessageBox.Show(ex.Message.ToString());
             }
         }
     }

@@ -18,13 +18,17 @@
                 <BlurEffect Radius="25"/>
             </Grid.Effect>
         </Grid>
-        <Grid>
-            <DataGrid x:Name="DGridClient" AutoGenerateColumns="False" Margin="0,0,0,60" >
+        <StackPanel>
+            <Grid>
+                <DataGrid x:Name="DGridClient" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,0,0,60" >
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Фамилия" Binding="{Binding F}" Width="*" />
                     <DataGridTextColumn Header="Имя" Binding="{Binding I}" Width="*" />
                     <DataGridTextColumn Header="Отчество" Binding="{Binding O}" Width="*" />
-                    <DataGridTemplateColumn Width="auto">
+                        <DataGridTextColumn Header="Дата рождения" Binding="{Binding DR, StringFormat=dd.MM.yyyy}" Width="*" />
+                        <DataGridTextColumn Header="Авто" Binding="{Binding Model}" Width="*" />
+                        <DataGridTextColumn Header="Госномер" Binding="{Binding Gosnum}" Width="*" />
+                        <DataGridTemplateColumn Width="auto">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <Button Content="Редактировать" x:Name="edit" Click="Edit_Click" />
@@ -33,7 +37,13 @@
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
-            <Button x:Name="del" Click="Del_Click" Content="Удалить" FontSize="18" Width="90" Height="50" Margin="653,390,57,10" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
+            
         </Grid>
+            <WrapPanel>
+                <Button x:Name="del" Click="Del_Click" Content="Удалить" FontSize="18" HorizontalAlignment="Right" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
+                <Button x:Name="Refresh" Click="Refresh_Click" Content="Обновить" FontSize="18" HorizontalAlignment="Right" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
+            </WrapPanel>
+           
+        </StackPanel>
     </Grid>
 </Page>

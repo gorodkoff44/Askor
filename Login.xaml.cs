@@ -22,13 +22,13 @@ namespace Страховая
         public Login()
         {
             InitializeComponent();
-            //Login login = new Login();
-            //login.Owner = this;
+            ln.MaxLength = 9;
+            pv.MaxLength = 9;
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-            if (ln.Text == "admin")
+            if (ln.Text == "admin") //заглушка для запуска без бд
             {
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();

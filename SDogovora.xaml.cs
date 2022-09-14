@@ -23,7 +23,15 @@ namespace Страховая
         public SDogovora()
         {
             InitializeComponent();
-            DGridClient.ItemsSource = DbAskorEntities.GetContext().Strahov.ToList();
+            try
+            {
+                DGridClient.ItemsSource = DbAskorEntities.GetContext().Strahov.ToList();
+                Console.WriteLine("ToList");
+            }
+            catch
+            {
+                MessageBox.Show("Нет соединения с базой данных!");
+            }
         }
 
         private void Edit_Click(object sender, RoutedEventArgs e)

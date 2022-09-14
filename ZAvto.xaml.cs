@@ -24,7 +24,14 @@ namespace Страховая
         public ZAvto()
         {
             InitializeComponent();
-            DataContext = _currentStrahov;
+            try
+            {
+                DataContext = _currentStrahov;
+            }
+            catch
+            {
+                MessageBox.Show("Нет соединения с базой данных!");
+            }
         }
 
         private void save_Click(object sender, RoutedEventArgs e)
